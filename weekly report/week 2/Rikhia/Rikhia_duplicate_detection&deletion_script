@@ -1,0 +1,167 @@
+import csv
+import hashlib
+import shutil
+from collections import Counter
+from pathlib import Path
+
+import imagehash
+import numpy as np
+from PIL import Image
+from tqdm import tqdm
+
+SOURCE_ROOT = Path("/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color")
+WORK_ROOT = Path("/kaggle/working/color")
+MY_CROPS = ["Grape", "Peach", "Pepper", "Potato", "Cherry", "Squash", "Strawberry", "Blueberry"]
+PART_NAME = "part_b"
+HAMMING_THRESHOLD = 4
+CONFLICT_RULE = "keep_one"
+DRY_RUN = False
+WRITE_DELETE_LOG = True
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png"}
+
+
+def crop_of(folder_name):
+    return folder_name.split("___")[0]
+
+
+def is_my_crop(folder_name):
+    c = crop_of(folder_name)
+    return any(c == m or c.startswith(m + "_") or c.startswith(m + ",") for m in MY_CROPS)
+
+
+def copy_crops():
+    WORK_ROOT.mkdir(parents=True, exist_ok=True)
+    for d in sorted(SOURCE_ROOT.iterdir()):
+        if not d.is_dir() or not is_my_crop(d.name):
+            continue
+        dest = WORK_ROOT / d.name
+        if dest.exists():
+            print(f"Already copied, skipping: {d.name}")
+            continue
+        print(f"Copying {d.name} ...")
+        shutil.copytree(d, dest)
+
+
+def collect_images():
+    files = [p for p in WORK_ROOT.rglob("*")
+             if p.suffix.lower() in IMAGE_EXTENSIONS and is_my_crop(p.parent.name)]
+    return sorted(files)
+
+
+def md5_of_file(path):
+    h = hashlib.md5()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def hash_all(files):
+    rows = []
+    for p in tqdm(files, desc="Hashing"):
+        try:
+            with Image.open(p) as im:
+                w, h = im.size
+                ph = int(str(imagehash.phash(im.convert("RGB"))), 16)
+            rows.append({
+                "path": str(p.relative_to(WORK_ROOT.parent)),
+                "crop": crop_of(p.parent.name),
+                "class": p.parent.name,
+                "md5": md5_of_file(p),
+                "phash": ph,
+                "width": w,
+                "height": h,
+            })
+        except Exception as e:
+            print(f"Skipped unreadable file {p}: {e}")
+    return rows
+
+
+_POPCOUNT = np.array([bin(i).count("1") for i in range(256)], dtype=np.uint8)
+
+
+def popcount64(x):
+    if hasattr(np, "bitwise_count"):
+        return np.bitwise_count(x)
+    return _POPCOUNT[x.view(np.uint8).reshape(-1, 8)].sum(axis=1)
+
+
+def find_groups(rows):
+    n = len(rows)
+    phs = np.array([r["phash"] for r in rows], dtype=np.uint64)
+    order = sorted(range(n), key=lambda i: (-(rows[i]["width"] * rows[i]["height"]), rows[i]["path"]))
+
+    kept_hash = np.zeros(n, dtype=np.uint64)
+    groups = []
+    for i in tqdm(order, desc="Comparing"):
+        k = len(groups)
+        if k:
+            d = popcount64(kept_hash[:k] ^ phs[i])
+            j = int(np.argmin(d))
+            if d[j] <= HAMMING_THRESHOLD:
+                groups[j].append(i)
+                continue
+        kept_hash[k] = phs[i]
+        groups.append([i])
+    return groups
+
+
+def main():
+    if not MY_CROPS:
+        available = sorted({crop_of(d.name) for d in SOURCE_ROOT.iterdir() if d.is_dir()})
+        print("MY_CROPS is empty. Fill it with Part B's crops, then run again.")
+        print("Crops available in the dataset:", available)
+        return
+    copy_crops()
+    files = collect_images()
+    print(f"Images found for {MY_CROPS}: {len(files)}   (expected about 18,154 for Part B)")
+    per_crop = Counter(crop_of(p.parent.name) for p in files)
+    for m in MY_CROPS:
+        n_m = sum(c for k, c in per_crop.items() if k == m or k.startswith(m + "_") or k.startswith(m + ","))
+        print(f"  {m}: {n_m}" + ("   <-- NOTHING FOUND, check the name" if n_m == 0 else ""))
+    rows = hash_all(files)
+
+    groups = find_groups(rows)
+
+    delete_idx = {}
+    for g in groups:
+        if len(g) == 1:
+            continue
+        classes = {rows[i]["class"] for i in g}
+        if len(classes) > 1 and CONFLICT_RULE == "drop_all":
+            for i in g:
+                delete_idx[i] = "label conflict (same image in different classes)"
+        else:
+            reason = "label conflict (kept best copy)" if len(classes) > 1 else "duplicate"
+            for i in g[1:]:
+                delete_idx[i] = reason
+
+    for i in tqdm(sorted(delete_idx), desc="Deleting" if not DRY_RUN else "Dry run"):
+        if not DRY_RUN:
+            (WORK_ROOT.parent / rows[i]["path"]).unlink(missing_ok=True)
+
+    kept_rows = [r for i, r in enumerate(rows) if i not in delete_idx]
+
+    with open(f"{PART_NAME}_hashes.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(kept_rows)
+
+    if WRITE_DELETE_LOG:
+        with open(f"{PART_NAME}_deleted_log.csv", "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["path", "reason"])
+            for i in sorted(delete_idx):
+                w.writerow([rows[i]["path"], delete_idx[i]])
+
+    print("\n---- Summary ----")
+    print(f"Before: {len(rows)} | Deleted: {len(delete_idx)} | After: {len(kept_rows)}")
+    for reason, c in Counter(delete_idx.values()).items():
+        print(f"  {reason}: {c}")
+    if DRY_RUN:
+        print("DRY RUN: nothing was deleted.")
+    print(f"Saved: {PART_NAME}_hashes.csv (kept images only)")
+
+
+if __name__ == "__main__":
+    main()
