@@ -1,0 +1,25 @@
+{
+  "mode": "cached",
+  "best_epoch": 28,
+  "epochs": 30,
+  "n_classes": 38,
+  "seed": 42,
+  "train_frac": 1.0,
+  "split_sizes": {
+    "train": 37751,
+    "val": 7976,
+    "test": 7978
+  },
+  "val": {
+    "accuracy": 0.9740471414242728,
+    "macro_f1": 0.9688796364032365,
+    "weighted_f1": 0.9738988941154468,
+    "n_samples": 7976
+  },
+  "test": {
+    "accuracy": 0.9700426171972926,
+    "macro_f1": 0.963527682475915,
+    "weighted_f1": 0.9697369838487032,
+    "n_samples": 7978
+  }
+}
