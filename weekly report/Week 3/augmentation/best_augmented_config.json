@@ -1,0 +1,49 @@
+{
+  "selected_config_name": "cutout_15_zoom_moderate_bg_0",
+  "best_overall_validation_config": "no_augmentation_baseline",
+  "best_overall_is_augmented": false,
+  "best_overall_validation_macro_f1": 0.8051050317006607,
+  "selection_metric": "validation_macro_f1",
+  "selected_validation_macro_f1": 0.776675121043741,
+  "selected_validation_accuracy": 0.8110581745235708,
+  "best_epoch": 8,
+  "baseline_validation_macro_f1": 0.8051050317006607,
+  "baseline_validation_accuracy": 0.8400200601805417,
+  "macro_f1_delta_vs_baseline": -0.028429910656919688,
+  "beats_or_matches_no_augmentation_baseline": false,
+  "recommend_using_augmentation_over_baseline": false,
+  "training_subset_images": 1900,
+  "validation_images": 7976,
+  "test_set_used": false,
+  "background_masks_visually_approved": true,
+  "transform_kwargs": {
+    "rotation_degrees": 30,
+    "zoom_scale": [
+      0.85,
+      1.15
+    ],
+    "brightness_range": [
+      0.6,
+      1.4
+    ],
+    "contrast_range": [
+      0.8,
+      1.2
+    ],
+    "saturation_range": [
+      0.8,
+      1.2
+    ],
+    "hue_strength": 0.02,
+    "blur_probability": 0.2,
+    "blur_sigma": [
+      0.5,
+      1.2
+    ],
+    "noise_probability": 0.2,
+    "noise_std": 0.02,
+    "cutout_probability": 0.25,
+    "cutout_max_area": 0.15,
+    "background_probability": 0.0
+  }
+}
