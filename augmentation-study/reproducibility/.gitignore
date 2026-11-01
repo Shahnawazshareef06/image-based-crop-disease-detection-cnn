@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+terravista_cache/
+terravista_runs/
+runs/
+*.partial.npy
+*.progress.npy
+*.npy
+*.pt
+*.pth
+*.npz

@@ -1,0 +1,13 @@
+{
+  "val_accuracy": 0.9938565697091274,
+  "val_macro_precision": 0.9906892923689778,
+  "val_macro_recall": 0.9913040239881324,
+  "val_macro_f1": 0.9909509971042401,
+  "val_weighted_precision": 0.9939057631892487,
+  "val_weighted_recall": 0.9938565697091274,
+  "val_weighted_f1": 0.9938513985983428,
+  "val_loss": 0.023940319791361464,
+  "selected_config": "03_uniform_p010",
+  "best_epoch": 8,
+  "test_split_touched": false
+}

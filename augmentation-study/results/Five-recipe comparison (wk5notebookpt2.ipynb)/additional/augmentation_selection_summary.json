@@ -1,0 +1,20 @@
+{
+  "study_version": "terravista-five-recipe-probability-comparison-v3.0",
+  "run_signature": "42d73726b034",
+  "selection_metric": "mean validation macro-F1 across three matched seeds",
+  "best_mean_recipe_overall": "00_no_augmentation",
+  "best_augmented_recipe": "03_uniform_p010",
+  "conservative_selected_recipe": "00_no_augmentation",
+  "selection_reason": "No-augmentation baseline had the highest mean validation macro-F1 across the three matched seeds.",
+  "baseline_mean_macro_f1": 0.9846652694615452,
+  "best_augmented_mean_macro_f1": 0.9840992088383856,
+  "best_augmented_paired_delta_vs_baseline_mean": -0.0005660606231595589,
+  "best_augmented_paired_delta_vs_baseline_sample_std": 0.003057896588297296,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "epochs_per_run": 3,
+  "test_split_touched": false
+}
