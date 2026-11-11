@@ -1,0 +1,3 @@
+focal_gamma1: mean validation macro-F1 0.9541 (std 0.0014) vs 0.9555 (std 0.0009) for cross-entropy; difference -0.0014, below the seed-to-seed spread. Mean F1 over the five smallest classes: 0.9728 vs 0.9716 (+0.0012).
+focal_gamma2: mean validation macro-F1 0.9519 (std 0.0014) vs 0.9555 (std 0.0009) for cross-entropy; difference -0.0036, below the seed-to-seed spread. Mean F1 over the five smallest classes: 0.9714 vs 0.9716 (-0.0002).
+Draft generated from the numbers above. Check it and edit before submitting.
