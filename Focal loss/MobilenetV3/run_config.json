@@ -1,0 +1,73 @@
+{
+  "model": "mobilenetv3",
+  "recipe": "uniform_p010",
+  "gammas": [
+    1.0,
+    2.0
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "epochs": 10,
+  "include_ce": true,
+  "frozen": true,
+  "split_sha256": "e3e2d22d67a94bdc7d38763ca88fea372f2513907b4bb7c67a5d825f5797575a",
+  "five_smallest_classes": [
+    "Potato___healthy",
+    "Apple___Cedar_apple_rust",
+    "Raspberry___healthy",
+    "Peach___healthy",
+    "Tomato___Tomato_mosaic_virus"
+  ],
+  "model_settings": {
+    "architecture": "ResNet-50",
+    "pretrained_weights": "ResNet50_Weights.DEFAULT",
+    "num_classes": 38,
+    "all_layers_trainable": true,
+    "image_size": 224,
+    "input_layout": "RGB uint8 NHWC before augmentation; float32 NCHW after augmentation",
+    "imagenet_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "imagenet_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "optimizer": "AdamW",
+    "backbone_lr": 1e-05,
+    "classifier_lr": 0.0005,
+    "weight_decay": 0.0001,
+    "loss": "CrossEntropyLoss",
+    "scheduler": null,
+    "train_batch_size": 32,
+    "validation_batch_size": 64,
+    "comparison_epochs": 3,
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "mixed_precision": true,
+    "amp_dtype": "float16",
+    "num_workers": 4,
+    "prefetch_factor": 4,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "float32_matmul_precision": "high"
+  },
+  "environment": {
+    "python": "3.13.16",
+    "pytorch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "numpy": "2.1.3",
+    "cuda_runtime": "13.0",
+    "cuda_available": true,
+    "gpu": "Tesla T4"
+  },
+  "test_data_used": false
+}

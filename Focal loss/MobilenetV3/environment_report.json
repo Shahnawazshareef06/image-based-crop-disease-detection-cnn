@@ -1,0 +1,24 @@
+{
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.1.3",
+    "opencv-python-headless": "4.14.0.94",
+    "scikit-learn": "1.6.1",
+    "pandas": "2.3.3",
+    "Pillow": "13.0.0",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130"
+  },
+  "missing_packages": [],
+  "torch": {
+    "version": "2.11.0+cu130",
+    "cuda_build": "13.0",
+    "cuda_available": true,
+    "cudnn_version": 92700,
+    "gpu_names": [
+      "Tesla T4",
+      "Tesla T4"
+    ]
+  }
+}
