@@ -1,0 +1,3 @@
+rank,recipe_name,seed_42_macro_f1,seed_123_macro_f1,seed_2026_macro_f1,mean_macro_f1,std_macro_f1,mean_accuracy
+1,no_augmentation,0.9734,0.9735,0.9759,0.974257,0.001383,0.9806
+2,uniform_p010,0.9674,0.9753,0.9771,0.973275,0.005142,0.9799
