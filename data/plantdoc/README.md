@@ -12,7 +12,7 @@
 
 - **Overall coverage is 28 of 38 classes (73.7%).** Ten TerraVista classes have no matching source folder in this release.
 - **Test coverage is 27 of 38 classes (71.1%) before screening.**
-- **Test support is uneven.** The represented classes have 4 to 15 test images each, with a median of 9. Corn gray leaf spot (ID 7) has the fewest test images, and tomato yellow leaf curl virus (ID 35) has the most. Report per-class support alongside Macro-F1 so readers can see which scores are based on few examples.
+- **Test support is uneven.** The represented classes have 4 to 15 test images each, with a median of 9. Corn gray leaf spot (ID 7) has the fewest test images, and tomato yellow leaf curl virus (ID 35) has the most.
 - **The counts come from the dataset audit.** All image headers were checked, and one image per populated class folder and split was fully decoded. The table records file counts before full evaluation decoding, duplicate removal, and screening for overlap with PlantVillage.
 
 ## Mapping decisions and class IDs
