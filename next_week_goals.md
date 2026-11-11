@@ -11,6 +11,7 @@ Decide among yourselves who does what. About a week and a half remains, so the p
 5. **Data-efficiency curve.** Train ResNet-50 on 1%, 5%, 10%, 25%, 50% and 100% of the training images (stratified, 3 seeds) and plot validation macro-F1 against the amount of data. Say how much data is needed to pass macro-F1 0.88 and to come within 0.01 of the full-data score.
 
 **Before the final session**
+
 6. **Error analysis, Grad-CAM and calibration.** For both models list the weakest classes and the most confused pairs. Make Grad-CAM heatmaps for 30 to 50 fixed images (correct, wrong and some field images) and say whether the model looks at the lesion or the background. Report ECE, with temperature scaling fitted on half of validation and scored on the other half.
 7. **Streamlit app.** Upload a leaf photo, choose ResNet-50 or MobileNetV3, and see the class, the calibrated confidence, "unsure" below a threshold you choose, and the Grad-CAM heatmap. A second page shows the results tables and the data-efficiency curve. It must start from the README instructions on a clean machine. Record a short screen video as a backup.
 8. **Presentation and deployment brief.** Slides covering the problem, the data and leakage checks, the method, the results (test, field, data efficiency, confidence intervals), Grad-CAM, the demo and the limitations. A one-page deployment brief for an agricultural extension service: model size and time per image, the "unsure" threshold, what happens for crops or diseases outside the 38 classes, and the limitations.
