@@ -1,17 +1,17 @@
-# Next week goals: TerraVista
+# Next goals: TerraVista (final stretch)
 
-Decide among yourselves who does what before starting the work. All of these carry over from last week.
+Decide among yourselves who does what. About a week and a half remains, so the project uses two models only: ResNet-50 and MobileNetV3.
 
-1. **Two more models.** Train MobileNetV3 and ViT-Tiny with the same split, seeds (42, 123, 2026) and number of epochs as the fine-tuned ResNet-50 you compare against. Report validation macro-F1 (mean and standard deviation), number of parameters, file size and time per image for all three models in one table.
-2. **Error analysis of all 3 models.** On validation, report each model's weakest classes and most confused class pairs. Count how many validation images all three get wrong and how many only one gets wrong. Write a short summary of how the models differ and why.
-3. **Check the focal-loss result.** Rerun cross-entropy and focal loss (gamma 2) for 10 epochs, and give cross-entropy two learning rates, to see whether the gain is more than a learning-rate or training-length effect. Use the same 3 seeds and report mean and standard deviation. If the gain disappears, say so.
-4. **Data-efficiency run.** Train the frozen ResNet-50 on 1%, 5%, 10%, 25%, 50% and 100% of the training images (stratified, 3 seeds) and report validation macro-F1 at each size.
-5. **Choose the field-image source.** Decide where field photos will come from (a public set such as PlantDoc, or photos you collect), confirm you can download it, and list which of the 38 classes it covers.
-6. **Remove the test set results.** Delete the test metrics, test reports and test confusion matrices still in the repo (the Week 3 `Model traning` folder), and take test numbers out of the READMEs.
-7. **Make every run reproducible.** Commit the scripts your READMEs tell people to run (for example `run_focal_loss.py`, `run_frozen_resnet50.py` and the training scripts for the new models). Each experiment must rerun with one command from a clean clone, and `verify_handoff.py` must pass.
-8. **Tidy the repository.** One clean structure of your own design, with no person-named folders, no old copies, no stray placeholder files, and plain file names. Add a README with the data, setup, how to run each step, the results table and the limitations.
+**By the next meeting**
 
-## Things to try for speed
+1. **Remove ViT-Tiny everywhere.** Delete its folder, results, simulated predictions, `prepare_handover_artifacts.py` and checkpoints, and take it out of every README and table (including the focal-loss tables). Every number left in the repo must come from a run whose log you can show.
+2. **Final models and one table.** Fine-tune ResNet-50 and MobileNetV3 with the same settings and seeds (42, 123, 2026). Write the settings in one config file, and save the log, checkpoint and validation predictions of each run. Report validation macro-F1 (mean and standard deviation), parameters, file size and time per image (measured the same way for both) in one table.
+3. **Test set, once.** With the config frozen, run the test set once per seed for each model. Report mean and standard deviation of test macro-F1, with a 95% bootstrap confidence interval, and compare the two models on the same images. Say how many test images have a near-duplicate in the training set, and the score without them. Change nothing after seeing the results.
+4. **PlantDoc field test.** Evaluate both models on the covered classes. Report field macro-F1 next to lab macro-F1 on the same classes, with 95% confidence intervals and the images per class, and describe the failure patterns. Check that no PlantDoc image also appears in PlantVillage.
+5. **Data-efficiency curve.** Train ResNet-50 on 1%, 5%, 10%, 25%, 50% and 100% of the training images (stratified, 3 seeds) and plot validation macro-F1 against the amount of data. Say how much data is needed to pass macro-F1 0.88 and to come within 0.01 of the full-data score.
 
-- Reuse the decoded-image cache and the `terravista_*` scripts from `augmentation-study/reproducibility` for the new models, so images are decoded once.
-- With a frozen backbone and no augmentation, save the features once and reuse them for every frozen-head run (for example data-efficiency).
+**Before the final session**
+6. **Error analysis, Grad-CAM and calibration.** For both models list the weakest classes and the most confused pairs. Make Grad-CAM heatmaps for 30 to 50 fixed images (correct, wrong and some field images) and say whether the model looks at the lesion or the background. Report ECE, with temperature scaling fitted on half of validation and scored on the other half.
+7. **Streamlit app.** Upload a leaf photo, choose ResNet-50 or MobileNetV3, and see the class, the calibrated confidence, "unsure" below a threshold you choose, and the Grad-CAM heatmap. A second page shows the results tables and the data-efficiency curve. It must start from the README instructions on a clean machine. Record a short screen video as a backup.
+8. **Presentation and deployment brief.** Slides covering the problem, the data and leakage checks, the method, the results (test, field, data efficiency, confidence intervals), Grad-CAM, the demo and the limitations. A one-page deployment brief for an agricultural extension service: model size and time per image, the "unsure" threshold, what happens for crops or diseases outside the 38 classes, and the limitations.
+9. **Clean repository.** One structure of your own design: no "weekly report" folders, no spaces, typos or symbols in names, no placeholder files, zips, duplicate notebooks or copied shared files. Delete the Week 3 test files. The README has the data, setup, how to run each step, the results table and the limitations. Every script it names is in the repo, every config records what really ran, and `verify_handoff.py` passes.
