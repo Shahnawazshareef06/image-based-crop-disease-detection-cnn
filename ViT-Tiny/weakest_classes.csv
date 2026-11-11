@@ -1,0 +1,6 @@
+class_id,class_name,precision,recall,f1_score,support
+7,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.8133,0.7922,0.8026,77
+29,Tomato___Early_blight,0.8516,0.88,0.8656,150
+9,Corn_(maize)___Northern_Leaf_Blight,0.8926,0.9048,0.8986,147
+2,Apple___Cedar_apple_rust,0.82,1.0,0.9011,41
+34,Tomato___Target_Spot,0.9159,0.9289,0.9224,211

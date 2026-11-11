@@ -1,0 +1,22 @@
+{
+  "model_architecture": "vit_tiny_patch16_224",
+  "library": "timm",
+  "num_classes": 38,
+  "parameters": {
+    "total_parameters": 5531750,
+    "trainable_parameters": 5531750,
+    "backbone_parameters": 5524416,
+    "classifier_parameters": 7334
+  },
+  "checkpoint_size_mb": 21.16,
+  "performance": {
+    "device": "cpu",
+    "device_name": "CPU",
+    "single_image_latency_ms": 97.94,
+    "batch_size": 32,
+    "batched_latency_ms": 1025.65,
+    "throughput_images_per_sec": 31.2,
+    "warmup_iterations": 10,
+    "benchmark_runs": 30
+  }
+}

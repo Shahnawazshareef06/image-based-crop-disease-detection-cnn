@@ -1,0 +1,11 @@
+actual_class,predicted_class,actual_id,predicted_id,confusion_count
+Tomato___Early_blight,Tomato___Target_Spot,29,34,18
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,7,9,16
+Tomato___Target_Spot,Tomato___Early_blight,34,29,15
+Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,9,7,14
+"Pepper,_bell___Bacterial_spot",Tomato___Bacterial_spot,18,28,12
+Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Tomato_Yellow_Leaf_Curl_Virus,33,35,11
+Tomato___Bacterial_spot,"Pepper,_bell___Bacterial_spot",28,18,10
+Apple___Apple_scab,Apple___Cedar_apple_rust,0,2,9
+Grape___Black_rot,Grape___Esca_(Black_Measles),11,12,8
+Potato___Early_blight,Tomato___Early_blight,20,29,8

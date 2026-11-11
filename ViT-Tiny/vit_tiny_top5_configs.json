@@ -1,0 +1,184 @@
+{
+  "description": "Top 5 ranked augmentation configurations from TerraVista ResNet-50 validation study",
+  "source": "terravista_all_logged_configs_ranked.json",
+  "study": "five_recipe_probability_comparison_v3",
+  "evaluation_metric": "Mean validation macro-F1 across seeds 42, 123, 2026 (3 epochs)",
+  "compatibility_keys": [
+    "p_flip",
+    "p_rotation",
+    "p_colour",
+    "p_blur",
+    "p_noise",
+    "p_cutout",
+    "p_background"
+  ],
+  "top5_configurations": [
+    {
+      "rank_within_study": 1,
+      "name": "00_no_augmentation",
+      "score_for_sorting": 0.984665,
+      "mean_macro_f1": 0.984665,
+      "sample_std_macro_f1": 0.0008504900548115076,
+      "seed_macro_f1": {
+        "42": 0.9853,
+        "123": 0.985,
+        "2026": 0.9837
+      },
+      "probabilities": {
+        "p_flip": 0.0,
+        "p_rotation": 0.0,
+        "p_colour": 0.0,
+        "p_blur": 0.0,
+        "p_noise": 0.0,
+        "p_cutout": 0.0,
+        "p_background": 0.0
+      },
+      "metric_definition": "Mean across seeds of each run\u2019s best validation macro-F1 across 3 training epochs.",
+      "source_log": "wk5notebookpt2.log",
+      "score_precision_note": "Exact study summary mean printed in log."
+    },
+    {
+      "rank_within_study": 2,
+      "name": "03_uniform_p010",
+      "score_for_sorting": 0.984099,
+      "mean_macro_f1": 0.984099,
+      "sample_std_macro_f1": 0.002206807649071427,
+      "seed_macro_f1": {
+        "42": 0.982,
+        "123": 0.9839,
+        "2026": 0.9864
+      },
+      "probabilities": {
+        "p_flip": 0.1,
+        "p_rotation": 0.1,
+        "p_colour": 0.1,
+        "p_blur": 0.1,
+        "p_noise": 0.1,
+        "p_cutout": 0.1,
+        "p_background": 0.1
+      },
+      "metric_definition": "Mean across seeds of each run\u2019s best validation macro-F1 across 3 training epochs.",
+      "source_log": "wk5notebookpt2.log",
+      "score_precision_note": "Exact study summary mean printed in log."
+    },
+    {
+      "rank_within_study": 3,
+      "name": "02_uniform_p020",
+      "score_for_sorting": 0.9838,
+      "mean_macro_f1": 0.9838,
+      "sample_std_macro_f1": 0.0016370705543744793,
+      "seed_macro_f1": {
+        "42": 0.982,
+        "123": 0.9842,
+        "2026": 0.9852
+      },
+      "probabilities": {
+        "p_flip": 0.2,
+        "p_rotation": 0.2,
+        "p_colour": 0.2,
+        "p_blur": 0.2,
+        "p_noise": 0.2,
+        "p_cutout": 0.2,
+        "p_background": 0.2
+      },
+      "metric_definition": "Mean across seeds of each run\u2019s best validation macro-F1 across 3 training epochs.",
+      "source_log": "wk5notebookpt2.log",
+      "score_precision_note": "Mean/SD derived from logged per-epoch scores rounded to four decimals; mean may differ slightly from underlying CSV summary."
+    },
+    {
+      "rank_within_study": 4,
+      "name": "01_joint_refined_recipe",
+      "score_for_sorting": 0.9830666666666668,
+      "mean_macro_f1": 0.9830666666666668,
+      "sample_std_macro_f1": 0.0024027761721253575,
+      "seed_macro_f1": {
+        "42": 0.9832,
+        "123": 0.9854,
+        "2026": 0.9806
+      },
+      "probabilities": {
+        "p_flip": 0.0,
+        "p_rotation": 0.0,
+        "p_colour": 0.25,
+        "p_blur": 0.1,
+        "p_noise": 0.25,
+        "p_cutout": 0.25,
+        "p_background": 0.1
+      },
+      "metric_definition": "Mean across seeds of each run\u2019s best validation macro-F1 across 3 training epochs.",
+      "source_log": "wk5notebookpt2.log",
+      "score_precision_note": "Mean/SD derived from logged per-epoch scores rounded to four decimals; mean may differ slightly from underlying CSV summary."
+    },
+    {
+      "rank_within_study": 5,
+      "name": "04_uniform_p025",
+      "score_for_sorting": 0.9823333333333334,
+      "mean_macro_f1": 0.9823333333333334,
+      "sample_std_macro_f1": 0.0025324559884296292,
+      "seed_macro_f1": {
+        "42": 0.9814,
+        "123": 0.9804,
+        "2026": 0.9852
+      },
+      "probabilities": {
+        "p_flip": 0.25,
+        "p_rotation": 0.25,
+        "p_colour": 0.25,
+        "p_blur": 0.25,
+        "p_noise": 0.25,
+        "p_cutout": 0.25,
+        "p_background": 0.25
+      },
+      "metric_definition": "Mean across seeds of each run\u2019s best validation macro-F1 across 3 training epochs.",
+      "source_log": "wk5notebookpt2.log",
+      "score_precision_note": "Mean/SD derived from logged per-epoch scores rounded to four decimals; mean may differ slightly from underlying CSV summary."
+    }
+  ],
+  "configurations_by_name": {
+    "00_no_augmentation": {
+      "p_flip": 0.0,
+      "p_rotation": 0.0,
+      "p_colour": 0.0,
+      "p_blur": 0.0,
+      "p_noise": 0.0,
+      "p_cutout": 0.0,
+      "p_background": 0.0
+    },
+    "03_uniform_p010": {
+      "p_flip": 0.1,
+      "p_rotation": 0.1,
+      "p_colour": 0.1,
+      "p_blur": 0.1,
+      "p_noise": 0.1,
+      "p_cutout": 0.1,
+      "p_background": 0.1
+    },
+    "02_uniform_p020": {
+      "p_flip": 0.2,
+      "p_rotation": 0.2,
+      "p_colour": 0.2,
+      "p_blur": 0.2,
+      "p_noise": 0.2,
+      "p_cutout": 0.2,
+      "p_background": 0.2
+    },
+    "01_joint_refined_recipe": {
+      "p_flip": 0.0,
+      "p_rotation": 0.0,
+      "p_colour": 0.25,
+      "p_blur": 0.1,
+      "p_noise": 0.25,
+      "p_cutout": 0.25,
+      "p_background": 0.1
+    },
+    "04_uniform_p025": {
+      "p_flip": 0.25,
+      "p_rotation": 0.25,
+      "p_colour": 0.25,
+      "p_blur": 0.25,
+      "p_noise": 0.25,
+      "p_cutout": 0.25,
+      "p_background": 0.25
+    }
+  }
+}
