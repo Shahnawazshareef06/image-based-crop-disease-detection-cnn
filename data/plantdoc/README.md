@@ -21,7 +21,7 @@ The CSV has **11 direct label matches** after name normalization and **17 projec
 
 - `source_label` is the PlantDoc folder name. `terravista_label` is the exact TerraVista label string, including punctuation, spaces, and underscores.
 - `terravista_id` is the original zero-based model output index from TerraVista’s `class_to_idx.json`. Match by the canonical label and use the saved ID when evaluating. CSV row positions and PlantDoc folder ordering can differ from model indices.
-- `decision` and `evidence` describe how the mapping was established. Split-prefixed columns record image file counts, readable headers, and fully decoded audit samples. A zero in an image file count means the class has no files in that split. The fully decoded count records the audit sample size.
+- `decision` describe how the mapping was established. Split-prefixed columns record image file counts, readable headers, and fully decoded audit samples. A zero in an image file count means the class has no files in that split. The fully decoded count records the audit sample size.
 
 ## Unmapped TerraVista classes
 
