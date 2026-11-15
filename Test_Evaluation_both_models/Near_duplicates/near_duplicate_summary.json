@@ -1,0 +1,17 @@
+{
+  "rule": "flagged if cosine similarity to nearest training image >= 0.95",
+  "n_test_images": 7978,
+  "n_flagged_cosine_primary": 353,
+  "share_flagged_cosine_primary": 0.04424667836550514,
+  "n_flagged_hash": 53,
+  "n_flagged_both_signals": 13,
+  "n_flagged_either": 393,
+  "flagged_by_threshold_information_only": {
+    "0.9": 4677,
+    "0.95": 353,
+    "0.98": 0,
+    "0.99": 0
+  },
+  "median_max_cosine": 0.9068831205368042,
+  "nearest_train_image_has_different_class_among_flagged": 0
+}
