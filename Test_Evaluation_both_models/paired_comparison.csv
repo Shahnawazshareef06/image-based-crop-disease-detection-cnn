@@ -1,0 +1,6 @@
+scope,quantity,point_difference,ci95_low,ci95_high,ci_excludes_zero,share_of_resamples_where_resnet50_is_better,both_correct,only_resnet50_correct,only_mobilenetv3_correct,both_wrong
+all_test_images,"resnet50 minus mobilenetv3_large, seed-mean macro-F1",0.017753551043973248,0.013628492497698009,0.02196355771762882,True,1.0,,,,
+excluding_flagged,"resnet50 minus mobilenetv3_large, seed-mean macro-F1",0.0178216725785606,0.013825070723015984,0.021959616563136466,True,1.0,,,,
+all_test_images,"resnet50 minus mobilenetv3_large, macro-F1 seed 42",0.02968785993802847,0.02444120285137811,0.03554668137404947,True,1.0,7673.0,205.0,44.0,56.0
+all_test_images,"resnet50 minus mobilenetv3_large, macro-F1 seed 123",0.011042001894497777,0.005672842304400225,0.01588444887277569,True,1.0,7745.0,125.0,63.0,45.0
+all_test_images,"resnet50 minus mobilenetv3_large, macro-F1 seed 2026",0.012530791299393718,0.007074916691880715,0.01825125670868106,True,1.0,7761.0,120.0,54.0,43.0

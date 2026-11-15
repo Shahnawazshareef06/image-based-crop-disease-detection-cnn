@@ -1,0 +1,17 @@
+torch 2.11.0+cu130 | torchvision 0.26.0+cu130 | GPU Tesla T4
+files found: 79 | color-folder candidates: ['/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color', '/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/plantvillage dataset/color']
+color folder: /kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color
+split file: /kaggle/input/datasets/shahnawaz006/test-evaluation-input/split (1).csv
+all 53,705 images found
+train/val/test: 37751 7976 7978
+validation: 7976 images in 57s
+test (images kept, features for near-duplicate check): 7978 images in 58s
+train (features only): 37751 images in 259s
+Validation check passed for all 6 models. Safe to continue to the test set.
+near-duplicates (primary rule): 353 of 7978 | by hash: 53 | both: 13
+test | resnet50 | seed 42 | macro-F1 0.9834 | accuracy 0.9875
+test | resnet50 | seed 123 | macro-F1 0.9795 | accuracy 0.9865
+test | resnet50 | seed 2026 | macro-F1 0.9834 | accuracy 0.9878
+test | mobilenetv3_large | seed 42 | macro-F1 0.9537 | accuracy 0.9673
+test | mobilenetv3_large | seed 123 | macro-F1 0.9685 | accuracy 0.9787
+test | mobilenetv3_large | seed 2026 | macro-F1 0.9709 | accuracy 0.9796

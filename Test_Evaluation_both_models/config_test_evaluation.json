@@ -1,0 +1,119 @@
+{
+  "purpose": "Member 3: single test-set evaluation + near-duplicate leakage check",
+  "image_size": 224,
+  "preprocessing": "PIL open -> RGB -> resize 224x224 bilinear -> /255 -> ImageNet mean/std (identical to training code)",
+  "imagenet_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "imagenet_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "inference": "model.eval(), torch.autocast float16 on GPU (same as training validation), batch 256",
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "models": {
+    "resnet50": "runs_finetune_p10/resnet50/frac100_seed{seed}/best_model.pt",
+    "mobilenetv3_large": "results/mobilenetv3/mobilenetv3_large_uniform_p010_seed{seed}/best_weights.pt"
+  },
+  "training_protocol_of_both_models": "full fine-tuning, uniform_p010, 3 epochs, AdamW backbone 1e-5 / head 5e-4, wd 1e-4, batch 32, fp16, no scheduler, cross-entropy; best epoch by validation macro-F1",
+  "near_duplicate_rule": {
+    "feature_extractor": "torchvision ResNet-50, ImageNet weights (DEFAULT), global-average-pooled 2048-d, L2-normalised",
+    "primary_flag": "a test image is flagged if cosine similarity to its most similar TRAINING image >= 0.95",
+    "cosine_threshold": 0.95,
+    "second_signal": "64-bit difference hash (dHash 9x8 grayscale); reported separately, flagged if Hamming distance <= 4 bits",
+    "hash_hamming_threshold": 4,
+    "sensitivity_thresholds_for_information_only": [
+      0.9,
+      0.95,
+      0.98,
+      0.99
+    ],
+    "compared_against": "all 37,751 images with split == train",
+    "note": "threshold chosen before looking at any test result and not changed afterwards"
+  },
+  "bootstrap": {
+    "resamples": 2000,
+    "rng_seed": 12345,
+    "interval": "95% percentile",
+    "design": "test images resampled with replacement; the SAME resampled images are used for both models and all seeds; seed-mean macro-F1 is computed per resample"
+  },
+  "sd_definition": "sample standard deviation across the 3 seeds (ddof=1), same as the team's earlier tables",
+  "low_support_class_warning_below_n_test_images": 50,
+  "validation_reproduction": {
+    "max_abs_macro_f1_difference": 0.003,
+    "min_prediction_agreement_with_saved_file": 0.995
+  },
+  "provenance": {
+    "split_csv_sha256": "902f6a241712a1a37854ceee4b3833768e723288fd3d00e23f17576269aaf95c",
+    "checkpoint_sha256": {
+      "resnet50_seed42": "d6139ab1430774052dd9493cab05846a12104b81cdd1572692cf6a5716167f23",
+      "resnet50_seed123": "3f4d8e63c1d67efe7c132cf93353fe40485e14f7d06420fe3f9fd0b452e2b9cf",
+      "resnet50_seed2026": "4b21b6fcbb97f209574f4c90548da1f54d3e1f25145c23e89cb968d9fb9ef0f7",
+      "mobilenetv3_large_seed42": "c4c9861500b3583ded1e07e3e878410d87f3e3d207fdd7de08c8fe47c1995c06",
+      "mobilenetv3_large_seed123": "0d87723a93428a3511926a4c46c7ce6eb88021c07dfe57e83696f12549aec698",
+      "mobilenetv3_large_seed2026": "90cc04dd7c7775bde665ff852e353c78b38a5ea6002b6d62395f994bc905f347"
+    },
+    "checkpoint_files": {
+      "resnet50_seed42": "/kaggle/input/datasets/shahnawaz006/test-evaluation-input/resnet50_p10_finetune_checkpoints/runs_finetune_p10/resnet50/frac100_seed42/best_model.pt",
+      "resnet50_seed123": "/kaggle/input/datasets/shahnawaz006/test-evaluation-input/resnet50_p10_finetune_checkpoints/runs_finetune_p10/resnet50/frac100_seed123/best_model.pt",
+      "resnet50_seed2026": "/kaggle/input/datasets/shahnawaz006/test-evaluation-input/resnet50_p10_finetune_checkpoints/runs_finetune_p10/resnet50/frac100_seed2026/best_model.pt",
+      "mobilenetv3_large_seed42": "/kaggle/input/datasets/shahnawaz006/test-evaluation-input/MobileNetV3_checkpoints/MobileNetV3_Handover/results/mobilenetv3/mobilenetv3_large_uniform_p010_seed42/best_weights.pt",
+      "mobilenetv3_large_seed123": "/kaggle/input/datasets/shahnawaz006/test-evaluation-input/MobileNetV3_checkpoints/MobileNetV3_Handover/results/mobilenetv3/mobilenetv3_large_uniform_p010_seed123/best_weights.pt",
+      "mobilenetv3_large_seed2026": "/kaggle/input/datasets/shahnawaz006/test-evaluation-input/MobileNetV3_checkpoints/MobileNetV3_Handover/results/mobilenetv3/mobilenetv3_large_uniform_p010_seed2026/best_weights.pt"
+    },
+    "class_to_idx": {
+      "Apple___Apple_scab": 0,
+      "Apple___Black_rot": 1,
+      "Apple___Cedar_apple_rust": 2,
+      "Apple___healthy": 3,
+      "Blueberry___healthy": 4,
+      "Cherry_(including_sour)___Powdery_mildew": 5,
+      "Cherry_(including_sour)___healthy": 6,
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 7,
+      "Corn_(maize)___Common_rust_": 8,
+      "Corn_(maize)___Northern_Leaf_Blight": 9,
+      "Corn_(maize)___healthy": 10,
+      "Grape___Black_rot": 11,
+      "Grape___Esca_(Black_Measles)": 12,
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 13,
+      "Grape___healthy": 14,
+      "Orange___Haunglongbing_(Citrus_greening)": 15,
+      "Peach___Bacterial_spot": 16,
+      "Peach___healthy": 17,
+      "Pepper,_bell___Bacterial_spot": 18,
+      "Pepper,_bell___healthy": 19,
+      "Potato___Early_blight": 20,
+      "Potato___Late_blight": 21,
+      "Potato___healthy": 22,
+      "Raspberry___healthy": 23,
+      "Soybean___healthy": 24,
+      "Squash___Powdery_mildew": 25,
+      "Strawberry___Leaf_scorch": 26,
+      "Strawberry___healthy": 27,
+      "Tomato___Bacterial_spot": 28,
+      "Tomato___Early_blight": 29,
+      "Tomato___Late_blight": 30,
+      "Tomato___Leaf_Mold": 31,
+      "Tomato___Septoria_leaf_spot": 32,
+      "Tomato___Spider_mites Two-spotted_spider_mite": 33,
+      "Tomato___Target_Spot": 34,
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 35,
+      "Tomato___Tomato_mosaic_virus": 36,
+      "Tomato___healthy": 37
+    },
+    "environment": {
+      "python": "3.13.16",
+      "torch": "2.11.0+cu130",
+      "torchvision": "0.26.0+cu130",
+      "numpy": "2.1.3",
+      "gpu": "Tesla T4"
+    }
+  }
+}
