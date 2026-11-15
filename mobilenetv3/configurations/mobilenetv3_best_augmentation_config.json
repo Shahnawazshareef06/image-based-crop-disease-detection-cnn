@@ -1,0 +1,55 @@
+{
+  "best_recipe_name": "uniform_p010",
+  "baseline_recipe_name": "no_augmentation",
+  "model_architecture": "mobilenet_v3_large",
+  "library": "torchvision",
+  "num_classes": 38,
+  "selection_rationale": "uniform_p010 is the top-ranked augmented recipe from the TerraVista ResNet-50 validation study (mean macro-F1 0.984099 +/- 0.002207, seeds 42/123/2026). The same recipe is reused for MobileNetV3; it was not re-selected on MobileNetV3 results.",
+  "probabilities": {
+    "p_flip": 0.1,
+    "p_rotation": 0.1,
+    "p_colour": 0.1,
+    "p_blur": 0.1,
+    "p_noise": 0.1,
+    "p_cutout": 0.1,
+    "p_background": 0.1
+  },
+  "fixed_transform_strengths": {
+    "rotation_degrees": 15.0,
+    "brightness_range": [
+      0.6,
+      1.4
+    ],
+    "contrast_range": [
+      0.8,
+      1.2
+    ],
+    "saturation_range": [
+      0.8,
+      1.2
+    ],
+    "hue_strength": 0.02,
+    "sensor_noise_std": 0.02,
+    "blur_kernel_size": 5,
+    "cutout_min_area": 0.02,
+    "cutout_max_area": 0.15,
+    "background_mask_size": 112,
+    "background_replacement_probability": 0.1
+  },
+  "optimization": {
+    "optimizer": "AdamW",
+    "backbone_lr": 1e-05,
+    "classifier_lr": 0.0005,
+    "weight_decay": 0.0001,
+    "loss": "CrossEntropyLoss",
+    "epochs": 3,
+    "train_batch_size": 32,
+    "val_batch_size": 64,
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "mixed_precision": "FP16"
+  }
+}

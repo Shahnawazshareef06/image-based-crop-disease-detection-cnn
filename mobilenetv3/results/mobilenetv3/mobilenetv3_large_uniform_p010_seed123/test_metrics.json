@@ -1,0 +1,7 @@
+{
+  "seed": 123,
+  "recipe": "uniform_p010",
+  "test_rows": 7978,
+  "test_macro_f1": 0.9687089822871823,
+  "test_accuracy": 0.978816746051642
+}

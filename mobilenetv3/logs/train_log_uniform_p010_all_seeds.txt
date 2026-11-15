@@ -1,0 +1,17 @@
+/kaggle/working/MobileNetV3_Handover
+Decoded image cache: resuming 0/45,727 rows; workers=4
+Training-only alpha masks: resuming 0/37,751 rows; workers=4
+Train=37,751; validation=7,976; classes=38
+Test images: not resolved, loaded, or evaluated.
+mobilenetv3_large | uniform_p010 | seed=42 | epoch=1/3 | val macro-F1=0.958905 | val acc=0.967528 | 109s
+mobilenetv3_large | uniform_p010 | seed=42 | epoch=2/3 | val macro-F1=0.966685 | val acc=0.974173 | 85s
+mobilenetv3_large | uniform_p010 | seed=42 | epoch=3/3 | val macro-F1=0.964859 | val acc=0.974173 | 85s
+Seed 42: best epoch 2, val macro-F1 0.966685
+mobilenetv3_large | uniform_p010 | seed=123 | epoch=1/3 | val macro-F1=0.946988 | val acc=0.959880 | 85s
+mobilenetv3_large | uniform_p010 | seed=123 | epoch=2/3 | val macro-F1=0.965088 | val acc=0.974423 | 85s
+mobilenetv3_large | uniform_p010 | seed=123 | epoch=3/3 | val macro-F1=0.977196 | val acc=0.982573 | 85s
+Seed 123: best epoch 3, val macro-F1 0.977196
+mobilenetv3_large | uniform_p010 | seed=2026 | epoch=1/3 | val macro-F1=0.954970 | val acc=0.964017 | 86s
+mobilenetv3_large | uniform_p010 | seed=2026 | epoch=2/3 | val macro-F1=0.962874 | val acc=0.971289 | 85s
+mobilenetv3_large | uniform_p010 | seed=2026 | epoch=3/3 | val macro-F1=0.977689 | val acc=0.983325 | 85s
+Seed 2026: best epoch 3, val macro-F1 0.977689

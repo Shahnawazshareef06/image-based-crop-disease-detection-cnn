@@ -1,0 +1,10 @@
+# Non-PyTorch dependencies (minimum set; no versions pinned here).
+# PyTorch/TorchVision are NOT listed: use the preinstalled CUDA builds
+# (the study ran torch 2.11.0+cu128 and torchvision 0.26.0+cu128).
+# For exact versions run `python freeze_environment.py` in your training
+# environment and commit the generated requirements-lock.txt.
+numpy
+opencv-python-headless
+scikit-learn
+pandas
+Pillow
