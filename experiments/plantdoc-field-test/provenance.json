@@ -1,0 +1,171 @@
+{
+  "split_sha256": "902f6a241712a1a37854ceee4b3833768e723288fd3d00e23f17576269aaf95c",
+  "plantvillage_root": "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/color",
+  "plantdoc_root": "/kaggle/input/datasets/nirmalsankalana/plantdoc-dataset",
+  "field_inventory_sha256": "ffde76642076eab45dc3d5d13576468f5b940095b54e16d06e8e21f363aceca4",
+  "plantvillage_inventory_sha256": "105738b9c8145f2dd770529fe5e29b556b438980e8dbc9513e75e5c2c7a92797",
+  "method": "exif_rgb_pixels_phash4_dhash4_all_directions_v2",
+  "inference": "RGB, PIL bilinear 224x224, ImageNet normalization, FP32",
+  "runs": [
+    {
+      "model": "resnet50",
+      "seed": 42,
+      "checkpoint_path": "/kaggle/input/models/astitvasrivastava05/terravista-final-handoff/other/default/1/resnet50_p10_finetune_checkpoints/runs_finetune_p10/resnet50/frac100_seed42/best_model.pt",
+      "checkpoint_sha256": "d6139ab1430774052dd9493cab05846a12104b81cdd1572692cf6a5716167f23"
+    },
+    {
+      "model": "resnet50",
+      "seed": 123,
+      "checkpoint_path": "/kaggle/input/models/astitvasrivastava05/terravista-final-handoff/other/default/1/resnet50_p10_finetune_checkpoints/runs_finetune_p10/resnet50/frac100_seed123/best_model.pt",
+      "checkpoint_sha256": "3f4d8e63c1d67efe7c132cf93353fe40485e14f7d06420fe3f9fd0b452e2b9cf"
+    },
+    {
+      "model": "resnet50",
+      "seed": 2026,
+      "checkpoint_path": "/kaggle/input/models/astitvasrivastava05/terravista-final-handoff/other/default/1/resnet50_p10_finetune_checkpoints/runs_finetune_p10/resnet50/frac100_seed2026/best_model.pt",
+      "checkpoint_sha256": "4b21b6fcbb97f209574f4c90548da1f54d3e1f25145c23e89cb968d9fb9ef0f7"
+    },
+    {
+      "model": "mobilenetv3_large",
+      "seed": 42,
+      "checkpoint_path": "/kaggle/input/models/astitvasrivastava05/terravista-final-handoff/other/default/1/MobileNetV3_checkpoints/MobileNetV3_Handover/results/mobilenetv3/mobilenetv3_large_uniform_p010_seed42/best_weights.pt",
+      "checkpoint_sha256": "c4c9861500b3583ded1e07e3e878410d87f3e3d207fdd7de08c8fe47c1995c06"
+    },
+    {
+      "model": "mobilenetv3_large",
+      "seed": 123,
+      "checkpoint_path": "/kaggle/input/models/astitvasrivastava05/terravista-final-handoff/other/default/1/MobileNetV3_checkpoints/MobileNetV3_Handover/results/mobilenetv3/mobilenetv3_large_uniform_p010_seed123/best_weights.pt",
+      "checkpoint_sha256": "0d87723a93428a3511926a4c46c7ce6eb88021c07dfe57e83696f12549aec698"
+    },
+    {
+      "model": "mobilenetv3_large",
+      "seed": 2026,
+      "checkpoint_path": "/kaggle/input/models/astitvasrivastava05/terravista-final-handoff/other/default/1/MobileNetV3_checkpoints/MobileNetV3_Handover/results/mobilenetv3/mobilenetv3_large_uniform_p010_seed2026/best_weights.pt",
+      "checkpoint_sha256": "90cc04dd7c7775bde665ff852e353c78b38a5ea6002b6d62395f994bc905f347"
+    }
+  ],
+  "mapping": {
+    "Apple_Scab_Leaf": "Apple___Apple_scab",
+    "Apple_rust_leaf": "Apple___Cedar_apple_rust",
+    "Apple_leaf": "Apple___healthy",
+    "Blueberry_leaf": "Blueberry___healthy",
+    "Cherry_leaf": "Cherry_(including_sour)___healthy",
+    "Corn_Gray_leaf_spot": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+    "Corn_rust_leaf": "Corn_(maize)___Common_rust_",
+    "Corn_leaf_blight": "Corn_(maize)___Northern_Leaf_Blight",
+    "grape_leaf_black_rot": "Grape___Black_rot",
+    "grape_leaf": "Grape___healthy",
+    "Peach_leaf": "Peach___healthy",
+    "Bell_pepper_leaf_spot": "Pepper,_bell___Bacterial_spot",
+    "Bell_pepper_leaf": "Pepper,_bell___healthy",
+    "Potato_leaf_early_blight": "Potato___Early_blight",
+    "Potato_leaf_late_blight": "Potato___Late_blight",
+    "Raspberry_leaf": "Raspberry___healthy",
+    "Soyabean_leaf": "Soybean___healthy",
+    "Squash_Powdery_mildew_leaf": "Squash___Powdery_mildew",
+    "Strawberry_leaf": "Strawberry___healthy",
+    "Tomato_leaf_bacterial_spot": "Tomato___Bacterial_spot",
+    "Tomato_Early_blight_leaf": "Tomato___Early_blight",
+    "Tomato_leaf_late_blight": "Tomato___Late_blight",
+    "Tomato_mold_leaf": "Tomato___Leaf_Mold",
+    "Tomato_Septoria_leaf_spot": "Tomato___Septoria_leaf_spot",
+    "Tomato_two_spotted_spider_mites_leaf": "Tomato___Spider_mites Two-spotted_spider_mite",
+    "Tomato_leaf_yellow_virus": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "Tomato_leaf_mosaic_virus": "Tomato___Tomato_mosaic_virus",
+    "Tomato_leaf": "Tomato___healthy"
+  },
+  "class_to_idx": {
+    "Apple___Apple_scab": 0,
+    "Apple___Black_rot": 1,
+    "Apple___Cedar_apple_rust": 2,
+    "Apple___healthy": 3,
+    "Blueberry___healthy": 4,
+    "Cherry_(including_sour)___Powdery_mildew": 5,
+    "Cherry_(including_sour)___healthy": 6,
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 7,
+    "Corn_(maize)___Common_rust_": 8,
+    "Corn_(maize)___Northern_Leaf_Blight": 9,
+    "Corn_(maize)___healthy": 10,
+    "Grape___Black_rot": 11,
+    "Grape___Esca_(Black_Measles)": 12,
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 13,
+    "Grape___healthy": 14,
+    "Orange___Haunglongbing_(Citrus_greening)": 15,
+    "Peach___Bacterial_spot": 16,
+    "Peach___healthy": 17,
+    "Pepper,_bell___Bacterial_spot": 18,
+    "Pepper,_bell___healthy": 19,
+    "Potato___Early_blight": 20,
+    "Potato___Late_blight": 21,
+    "Potato___healthy": 22,
+    "Raspberry___healthy": 23,
+    "Soybean___healthy": 24,
+    "Squash___Powdery_mildew": 25,
+    "Strawberry___Leaf_scorch": 26,
+    "Strawberry___healthy": 27,
+    "Tomato___Bacterial_spot": 28,
+    "Tomato___Early_blight": 29,
+    "Tomato___Late_blight": 30,
+    "Tomato___Leaf_Mold": 31,
+    "Tomato___Septoria_leaf_spot": 32,
+    "Tomato___Spider_mites Two-spotted_spider_mite": 33,
+    "Tomato___Target_Spot": 34,
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 35,
+    "Tomato___Tomato_mosaic_virus": 36,
+    "Tomato___healthy": 37
+  },
+  "plantdoc_source": "nirmalsankalana/plantdoc-dataset",
+  "pytorch_version": "2.11.0+cu130",
+  "device": "cuda",
+  "field_output_sha256": {
+    "plantdoc_resnet50_seed42_predictions.csv": "3bc41d20ac5148748ea2be8fc426661381df189ed14cbfc36ca96669f20d6c71",
+    "plantdoc_resnet50_seed123_predictions.csv": "d9060eb71cdbe03f986da3beca4e9341d0d91ecd30d099414da06fd4120fde9a",
+    "plantdoc_resnet50_seed2026_predictions.csv": "edf4c34aa9df6b188682848c82078ab808903b3f718b5ba982fb9989840e7264",
+    "plantdoc_mobilenetv3_large_seed42_predictions.csv": "0d25c2237d95e90c2b823c6711cdc71f7fcde2edd3422cd4f96e961c8688a405",
+    "plantdoc_mobilenetv3_large_seed123_predictions.csv": "b030fb916ba3393074e98b5461e0a935f1e2b93fce58479295e319f1865e0c41",
+    "plantdoc_mobilenetv3_large_seed2026_predictions.csv": "a09d069e60bc42e5aafa9d76ca0da1b0b23d046025a4c77347e761bcd2e22d7f",
+    "plantdoc_test_cohort.csv": "9e19a9a31b8b77972a977e2a1a689575986c5e1619b0c499324d9f19a41c1727",
+    "overlap_audit.csv": "63cc34a5f107831929fd369ab0e7760edc182cb65a6c8b6bdbf0389c7655e78b",
+    "duplicate_checks.csv": "c7d136098c6bf6703bf7553cd26612b5b747f0ac8e8a8039454754327a6d11ea",
+    "duplicate_summary.csv": "01cf5ea5f8e1cf1b3385b959c07176f2cca3d8595a77ea28929ce915044fa356"
+  },
+  "lab_test_predictions": [
+    {
+      "model": "resnet50",
+      "seed": 42,
+      "path": "/kaggle/input/datasets/astitvasrivastava05/terravista-lab-test-predictions/test_predictions_resnet50_seed42.csv",
+      "sha256": "a9c7856b1c2d7bc623ad67456aef4caba6cbd877f1a94741966df637fa7c43b5"
+    },
+    {
+      "model": "resnet50",
+      "seed": 123,
+      "path": "/kaggle/input/datasets/astitvasrivastava05/terravista-lab-test-predictions/test_predictions_resnet50_seed123.csv",
+      "sha256": "2287d8f0091217e7ea8e686353955c64d49f383b2440e1c8c5b8a4d20b66470e"
+    },
+    {
+      "model": "resnet50",
+      "seed": 2026,
+      "path": "/kaggle/input/datasets/astitvasrivastava05/terravista-lab-test-predictions/test_predictions_resnet50_seed2026.csv",
+      "sha256": "7cf344ffae125f9453d98fcb269e09a3d56d79b527acdf8955ff105a258a0d58"
+    },
+    {
+      "model": "mobilenetv3_large",
+      "seed": 42,
+      "path": "/kaggle/input/datasets/astitvasrivastava05/terravista-lab-test-predictions/test_predictions_mobilenetv3_large_seed42.csv",
+      "sha256": "ff59af304b4075f3b02ad193b5ce7720fa69ae548940b3a520dd1b729480278b"
+    },
+    {
+      "model": "mobilenetv3_large",
+      "seed": 123,
+      "path": "/kaggle/input/datasets/astitvasrivastava05/terravista-lab-test-predictions/test_predictions_mobilenetv3_large_seed123.csv",
+      "sha256": "2efe4f0903dc73d74be8dd19a5651aa294dd4e80606626317bd5fa1647c79043"
+    },
+    {
+      "model": "mobilenetv3_large",
+      "seed": 2026,
+      "path": "/kaggle/input/datasets/astitvasrivastava05/terravista-lab-test-predictions/test_predictions_mobilenetv3_large_seed2026.csv",
+      "sha256": "730102baf756cfc421714a84d1b36c593001a199142cadc006f2f555444ceb09"
+    }
+  ],
+  "plantvillage_test_predictions_per_run": 7978
+}

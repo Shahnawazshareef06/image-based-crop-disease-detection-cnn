@@ -1,0 +1,13 @@
+domain,model,seed,macro_f1
+plantdoc_test,resnet50,42,0.26747401391829484
+plantdoc_test,resnet50,123,0.30542309779851096
+plantdoc_test,resnet50,2026,0.273842875813019
+plantvillage_test_same_classes_duplicate_screened,resnet50,42,0.982316841830377
+plantvillage_test_same_classes_duplicate_screened,resnet50,123,0.9784018205276207
+plantvillage_test_same_classes_duplicate_screened,resnet50,2026,0.9809940079405153
+plantdoc_test,mobilenetv3_large,42,0.2384672751080672
+plantdoc_test,mobilenetv3_large,123,0.22915889611796042
+plantdoc_test,mobilenetv3_large,2026,0.22841151890622252
+plantvillage_test_same_classes_duplicate_screened,mobilenetv3_large,42,0.9473232205819606
+plantvillage_test_same_classes_duplicate_screened,mobilenetv3_large,123,0.965045703611406
+plantvillage_test_same_classes_duplicate_screened,mobilenetv3_large,2026,0.969135713107126

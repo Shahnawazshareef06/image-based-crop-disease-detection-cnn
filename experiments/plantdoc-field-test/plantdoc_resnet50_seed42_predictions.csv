@@ -1,0 +1,242 @@
+path,y_true,y_pred,softmax_score
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_1.jpg,0,16,0.5553492307662964
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_10.jpg,0,0,0.7503643035888672
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_2.jpg,0,26,0.44683516025543213
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_3.jpg,0,20,0.619067907333374
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_4.jpg,0,30,0.42789769172668457
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_5.jpg,0,0,0.3502158522605896
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_6.jpg,0,20,0.2690154016017914
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_7.jpg,0,0,0.5252630710601807
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_8.jpg,0,26,0.3384065628051758
+test/Apple_Scab_Leaf/test_Apple Scab Leaf_9.jpg,0,26,0.9170445203781128
+test/Apple_leaf/test_Apple leaf_1.jpg,3,3,0.958479642868042
+test/Apple_leaf/test_Apple leaf_2.jpg,3,3,0.5645682215690613
+test/Apple_leaf/test_Apple leaf_3.jpg,3,18,0.3147161900997162
+test/Apple_leaf/test_Apple leaf_4.jpg,3,3,0.7187469601631165
+test/Apple_leaf/test_Apple leaf_5.jpg,3,4,0.8144936561584473
+test/Apple_leaf/test_Apple leaf_6.jpg,3,4,0.675177812576294
+test/Apple_leaf/test_Apple leaf_7.jpg,3,6,0.43333786725997925
+test/Apple_leaf/test_Apple leaf_8.jpg,3,35,0.4520295560359955
+test/Apple_leaf/test_Apple leaf_9.jpg,3,0,0.7271502017974854
+test/Apple_rust_leaf/test_Apple rust leaf_1.jpg,2,4,0.2361818552017212
+test/Apple_rust_leaf/test_Apple rust leaf_10.jpg,2,1,0.5914185047149658
+test/Apple_rust_leaf/test_Apple rust leaf_2.jpg,2,11,0.27098968625068665
+test/Apple_rust_leaf/test_Apple rust leaf_3.jpg,2,1,0.9752276539802551
+test/Apple_rust_leaf/test_Apple rust leaf_4.jpg,2,7,0.8074747920036316
+test/Apple_rust_leaf/test_Apple rust leaf_5.jpg,2,1,0.30334463715553284
+test/Apple_rust_leaf/test_Apple rust leaf_6.jpg,2,26,0.3426828980445862
+test/Apple_rust_leaf/test_Apple rust leaf_7.jpg,2,0,0.46270129084587097
+test/Apple_rust_leaf/test_Apple rust leaf_8.jpg,2,16,0.615932285785675
+test/Apple_rust_leaf/test_Apple rust leaf_9.jpg,2,1,0.498487651348114
+test/Bell_pepper_leaf/test_Bell_pepper leaf_1.jpg,19,19,0.423767626285553
+test/Bell_pepper_leaf/test_Bell_pepper leaf_2.jpg,19,8,0.878915548324585
+test/Bell_pepper_leaf/test_Bell_pepper leaf_3.jpg,19,19,0.974131166934967
+test/Bell_pepper_leaf/test_Bell_pepper leaf_4.jpg,19,19,0.3786446750164032
+test/Bell_pepper_leaf/test_Bell_pepper leaf_5.jpg,19,19,0.8056179285049438
+test/Bell_pepper_leaf/test_Bell_pepper leaf_6.jpg,19,19,0.8491716980934143
+test/Bell_pepper_leaf/test_Bell_pepper leaf_7.jpg,19,19,0.957953929901123
+test/Bell_pepper_leaf/test_Bell_pepper leaf_8.jpg,19,19,0.6527513265609741
+test/Bell_pepper_leaf_spot/test_Bell_pepper leaf spot_1.jpg,18,18,0.5489042401313782
+test/Bell_pepper_leaf_spot/test_Bell_pepper leaf spot_2.jpg,18,19,0.6824887990951538
+test/Bell_pepper_leaf_spot/test_Bell_pepper leaf spot_3.jpg,18,18,0.7525365948677063
+test/Bell_pepper_leaf_spot/test_Bell_pepper leaf spot_4.jpg,18,18,0.49421459436416626
+test/Bell_pepper_leaf_spot/test_Bell_pepper leaf spot_5.jpg,18,19,0.6982399225234985
+test/Bell_pepper_leaf_spot/test_Bell_pepper leaf spot_6.jpg,18,18,0.9958957433700562
+test/Bell_pepper_leaf_spot/test_Bell_pepper leaf spot_7.jpg,18,8,0.3385346233844757
+test/Bell_pepper_leaf_spot/test_Bell_pepper leaf spot_8.jpg,18,30,0.49433279037475586
+test/Bell_pepper_leaf_spot/test_Bell_pepper leaf spot_9.jpg,18,18,0.42419031262397766
+test/Blueberry_leaf/test_Blueberry leaf_1.jpg,4,4,0.9175828099250793
+test/Blueberry_leaf/test_Blueberry leaf_10.jpg,4,4,0.6619555950164795
+test/Blueberry_leaf/test_Blueberry leaf_11.jpg,4,30,0.649115264415741
+test/Blueberry_leaf/test_Blueberry leaf_2.jpg,4,6,0.48028093576431274
+test/Blueberry_leaf/test_Blueberry leaf_4.jpg,4,18,0.22073017060756683
+test/Blueberry_leaf/test_Blueberry leaf_5.jpg,4,30,0.5927903652191162
+test/Blueberry_leaf/test_Blueberry leaf_6.jpg,4,24,0.48292094469070435
+test/Blueberry_leaf/test_Blueberry leaf_7.jpg,4,4,0.7777953743934631
+test/Blueberry_leaf/test_Blueberry leaf_8.jpg,4,16,0.22169314324855804
+test/Blueberry_leaf/test_Blueberry leaf_9.jpg,4,4,0.37739822268486023
+test/Cherry_leaf/test_Cherry leaf_1.jpg,6,4,0.7094135880470276
+test/Cherry_leaf/test_Cherry leaf_10.jpg,6,3,0.8600013256072998
+test/Cherry_leaf/test_Cherry leaf_2.jpg,6,19,0.35590800642967224
+test/Cherry_leaf/test_Cherry leaf_3.jpg,6,16,0.5693574547767639
+test/Cherry_leaf/test_Cherry leaf_4.jpg,6,3,0.7590533494949341
+test/Cherry_leaf/test_Cherry leaf_5.jpg,6,3,0.8187777996063232
+test/Cherry_leaf/test_Cherry leaf_6.jpg,6,16,0.904933512210846
+test/Cherry_leaf/test_Cherry leaf_7.jpg,6,8,0.40633243322372437
+test/Cherry_leaf/test_Cherry leaf_8.jpg,6,3,0.9229105114936829
+test/Cherry_leaf/test_Cherry leaf_9.jpg,6,0,0.38127028942108154
+test/Corn_Gray_leaf_spot/test_Corn Gray leaf spot_1.jpg,7,7,0.8858233690261841
+test/Corn_Gray_leaf_spot/test_Corn Gray leaf spot_2.jpg,7,7,0.6135221123695374
+test/Corn_Gray_leaf_spot/test_Corn Gray leaf spot_3.jpg,7,9,0.38665351271629333
+test/Corn_leaf_blight/test_Corn leaf blight_1.jpg,9,9,0.5408266186714172
+test/Corn_leaf_blight/test_Corn leaf blight_10.jpg,9,8,0.7916640043258667
+test/Corn_leaf_blight/test_Corn leaf blight_11.jpg,9,7,0.8862836956977844
+test/Corn_leaf_blight/test_Corn leaf blight_12.jpg,9,8,0.546492874622345
+test/Corn_leaf_blight/test_Corn leaf blight_2.jpg,9,7,0.5908096432685852
+test/Corn_leaf_blight/test_Corn leaf blight_3.jpg,9,9,0.6786412000656128
+test/Corn_leaf_blight/test_Corn leaf blight_6.jpg,9,7,0.7866616249084473
+test/Corn_leaf_blight/test_Corn leaf blight_7.jpg,9,7,0.8641831874847412
+test/Corn_leaf_blight/test_Corn leaf blight_8.jpg,9,7,0.528504490852356
+test/Corn_leaf_blight/test_Corn leaf blight_9.jpg,9,9,0.9979422688484192
+test/Corn_rust_leaf/test_Corn rust leaf_1.jpg,8,8,0.5031431913375854
+test/Corn_rust_leaf/test_Corn rust leaf_10.jpg,8,8,0.6073151230812073
+test/Corn_rust_leaf/test_Corn rust leaf_2.jpg,8,8,0.7566699385643005
+test/Corn_rust_leaf/test_Corn rust leaf_3.jpg,8,7,0.8646914958953857
+test/Corn_rust_leaf/test_Corn rust leaf_4.jpg,8,8,0.7438600063323975
+test/Corn_rust_leaf/test_Corn rust leaf_5.jpg,8,8,0.8597261905670166
+test/Corn_rust_leaf/test_Corn rust leaf_6.jpg,8,9,0.6863955855369568
+test/Corn_rust_leaf/test_Corn rust leaf_7.jpg,8,8,0.9985952973365784
+test/Corn_rust_leaf/test_Corn rust leaf_8.jpg,8,9,0.7153404355049133
+test/Corn_rust_leaf/test_Corn rust leaf_9.jpg,8,9,0.5106713175773621
+test/Peach_leaf/test_Peach leaf_1.jpg,17,6,0.8050393462181091
+test/Peach_leaf/test_Peach leaf_2.jpg,17,17,0.7702797651290894
+test/Peach_leaf/test_Peach leaf_3.jpg,17,6,0.38872408866882324
+test/Peach_leaf/test_Peach leaf_4.jpg,17,4,0.8136653304100037
+test/Peach_leaf/test_Peach leaf_5.jpg,17,17,0.5900641083717346
+test/Peach_leaf/test_Peach leaf_6.jpg,17,4,0.8690780401229858
+test/Peach_leaf/test_Peach leaf_7.jpg,17,16,0.33091214299201965
+test/Peach_leaf/test_Peach leaf_8.jpg,17,4,0.6223711967468262
+test/Peach_leaf/test_Peach leaf_9.jpg,17,17,0.4237174093723297
+test/Potato_leaf_early_blight/test_Potato leaf early blight_1.jpg,20,8,0.9996403455734253
+test/Potato_leaf_early_blight/test_Potato leaf early blight_2.jpg,20,8,0.9876769781112671
+test/Potato_leaf_early_blight/test_Potato leaf early blight_3.jpg,20,30,0.6361815333366394
+test/Potato_leaf_early_blight/test_Potato leaf early blight_4_1.jpg,20,30,0.9191187024116516
+test/Potato_leaf_early_blight/test_Potato leaf early blight_4_2.jpg,20,30,0.9248146414756775
+test/Potato_leaf_early_blight/test_Potato leaf early blight_4_3.jpg,20,30,0.9349042773246765
+test/Potato_leaf_early_blight/test_Potato leaf early blight_4_4.jpg,20,29,0.29192036390304565
+test/Potato_leaf_early_blight/test_Potato leaf early blight_5.jpg,20,30,0.9858107566833496
+test/Potato_leaf_early_blight/test_Potato leaf early blight_6_1.jpg,20,20,0.5864416360855103
+test/Potato_leaf_early_blight/test_Potato leaf early blight_6_2.jpg,20,18,0.7293664813041687
+test/Potato_leaf_early_blight/test_Potato leaf early blight_6_3.jpg,20,30,0.8550273180007935
+test/Potato_leaf_early_blight/test_Potato leaf early blight_6_4.jpg,20,20,0.9873895645141602
+test/Potato_leaf_early_blight/test_Potato leaf early blight_7.jpg,20,18,0.6015098094940186
+test/Potato_leaf_early_blight/test_Potato leaf early blight_8.jpg,20,30,0.9166415929794312
+test/Potato_leaf_late_blight/test_Potato leaf late blight_1.jpg,21,20,0.4084218442440033
+test/Potato_leaf_late_blight/test_Potato leaf late blight_2.jpg,21,30,0.9993042945861816
+test/Potato_leaf_late_blight/test_Potato leaf late blight_3.jpg,21,30,0.8464784026145935
+test/Potato_leaf_late_blight/test_Potato leaf late blight_4.jpg,21,26,0.7018405795097351
+test/Potato_leaf_late_blight/test_Potato leaf late blight_6.jpg,21,30,0.999421238899231
+test/Potato_leaf_late_blight/test_Potato leaf late blight_7.jpg,21,32,0.509573221206665
+test/Potato_leaf_late_blight/test_Potato leaf late blight_8.jpg,21,30,0.9924240112304688
+test/Raspberry_leaf/test_Raspberry leaf_1.jpg,23,23,0.9949069619178772
+test/Raspberry_leaf/test_Raspberry leaf_2.jpg,23,23,0.9457550644874573
+test/Raspberry_leaf/test_Raspberry leaf_3.jpg,23,23,0.9919324517250061
+test/Raspberry_leaf/test_Raspberry leaf_4.jpg,23,23,0.755633533000946
+test/Raspberry_leaf/test_Raspberry leaf_5.jpg,23,23,0.9868879914283752
+test/Raspberry_leaf/test_Raspberry leaf_6.jpg,23,23,0.9962373971939087
+test/Raspberry_leaf/test_Raspberry leaf_7.jpg,23,23,0.9965705871582031
+test/Soyabean_leaf/test_Soyabean leaf_1.jpg,24,4,0.5434296131134033
+test/Soyabean_leaf/test_Soyabean leaf_2.jpg,24,30,0.6314292550086975
+test/Soyabean_leaf/test_Soyabean leaf_3.jpg,24,23,0.9657017588615417
+test/Soyabean_leaf/test_Soyabean leaf_4.jpg,24,4,0.5533312559127808
+test/Soyabean_leaf/test_Soyabean leaf_5.jpg,24,11,0.4139670431613922
+test/Soyabean_leaf/test_Soyabean leaf_6.jpg,24,6,0.46937188506126404
+test/Soyabean_leaf/test_Soyabean leaf_7.jpg,24,4,0.587708592414856
+test/Soyabean_leaf/test_Soyabean leaf_8.jpg,24,19,0.5477036833763123
+test/Squash_Powdery_mildew_leaf/test_Squash Powdery mildew leaf_1.jpg,25,25,0.6623532176017761
+test/Squash_Powdery_mildew_leaf/test_Squash Powdery mildew leaf_2.jpg,25,37,0.5100898742675781
+test/Squash_Powdery_mildew_leaf/test_Squash Powdery mildew leaf_3.jpg,25,30,0.8267168998718262
+test/Squash_Powdery_mildew_leaf/test_Squash Powdery mildew leaf_4.jpg,25,25,0.5906842947006226
+test/Squash_Powdery_mildew_leaf/test_Squash Powdery mildew leaf_5.jpg,25,30,0.978544294834137
+test/Squash_Powdery_mildew_leaf/test_Squash Powdery mildew leaf_6.jpg,25,25,0.9988889098167419
+test/Strawberry_leaf/test_Strawberry leaf_1.jpg,27,23,0.8780827522277832
+test/Strawberry_leaf/test_Strawberry leaf_2.jpg,27,23,0.9077793955802917
+test/Strawberry_leaf/test_Strawberry leaf_3.jpg,27,30,0.3516523241996765
+test/Strawberry_leaf/test_Strawberry leaf_4.jpg,27,23,0.9540762901306152
+test/Strawberry_leaf/test_Strawberry leaf_5.jpg,27,26,0.43129849433898926
+test/Strawberry_leaf/test_Strawberry leaf_6.jpg,27,23,0.3210907280445099
+test/Strawberry_leaf/test_Strawberry leaf_7.jpg,27,30,0.5658960342407227
+test/Strawberry_leaf/test_Strawberry leaf_8.jpg,27,23,0.7296743988990784
+test/Tomato_Early_blight_leaf/test_Tomato Early blight leaf_1.jpg,29,29,0.8901838064193726
+test/Tomato_Early_blight_leaf/test_Tomato Early blight leaf_2.jpg,29,18,0.8263542652130127
+test/Tomato_Early_blight_leaf/test_Tomato Early blight leaf_3.jpg,29,26,0.3116321265697479
+test/Tomato_Early_blight_leaf/test_Tomato Early blight leaf_4.jpg,29,29,0.7939130663871765
+test/Tomato_Early_blight_leaf/test_Tomato Early blight leaf_5.jpg,29,7,0.3886094391345978
+test/Tomato_Early_blight_leaf/test_Tomato Early blight leaf_6.jpg,29,29,0.48207715153694153
+test/Tomato_Early_blight_leaf/test_Tomato Early blight leaf_7.jpg,29,30,0.5125285983085632
+test/Tomato_Early_blight_leaf/test_Tomato Early blight leaf_8.jpg,29,29,0.5089928507804871
+test/Tomato_Early_blight_leaf/test_Tomato Early blight leaf_9.jpg,29,18,0.3029450476169586
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_10.jpg,32,29,0.6103389859199524
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_11.jpg,32,8,0.6474438309669495
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_1_1.jpg,32,32,0.6916449666023254
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_1_2.jpg,32,32,0.4799176752567291
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_2.jpg,32,26,0.5008264183998108
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_3.jpg,32,29,0.48131752014160156
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_4.jpg,32,8,0.9998822212219238
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_5.jpg,32,32,0.6651062965393066
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_6.jpg,32,32,0.8254597187042236
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_7.jpg,32,32,0.5305514335632324
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_8.jpg,32,29,0.633124828338623
+test/Tomato_Septoria_leaf_spot/test_Tomato Septoria leaf spot_9.jpg,32,32,0.578859806060791
+test/Tomato_leaf/test_Tomato leaf_1.jpg,37,23,0.43381550908088684
+test/Tomato_leaf/test_Tomato leaf_2.jpg,37,30,0.8386073708534241
+test/Tomato_leaf/test_Tomato leaf_3.jpg,37,26,0.29101496934890747
+test/Tomato_leaf/test_Tomato leaf_4.jpg,37,30,0.6470344066619873
+test/Tomato_leaf/test_Tomato leaf_5.jpg,37,29,0.6256272792816162
+test/Tomato_leaf/test_Tomato leaf_6.jpg,37,30,0.7714035511016846
+test/Tomato_leaf/test_Tomato leaf_7.jpg,37,30,0.9915477633476257
+test/Tomato_leaf/test_Tomato leaf_8.jpg,37,30,0.316211074590683
+test/Tomato_leaf_bacterial_spot/test_Tomato leaf bacterial spot_3.jpg,28,18,0.8796367049217224
+test/Tomato_leaf_bacterial_spot/test_Tomato leaf bacterial spot_4.jpg,28,18,0.9826566576957703
+test/Tomato_leaf_bacterial_spot/test_Tomato leaf bacterial spot_5.jpg,28,29,0.49385759234428406
+test/Tomato_leaf_bacterial_spot/test_Tomato leaf bacterial spot_6.jpg,28,8,0.8563557267189026
+test/Tomato_leaf_bacterial_spot/test_Tomato leaf bacterial spot_7.jpg,28,18,0.3353724479675293
+test/Tomato_leaf_bacterial_spot/test_Tomato leaf bacterial spot_8.jpg,28,32,0.7838088870048523
+test/Tomato_leaf_bacterial_spot/test_Tomato leaf bacterial spot_9.jpg,28,26,0.5124104022979736
+test/Tomato_leaf_late_blight/test_Tomato leaf late blight_1.jpg,30,30,0.9872093200683594
+test/Tomato_leaf_late_blight/test_Tomato leaf late blight_10.jpg,30,30,0.9713953733444214
+test/Tomato_leaf_late_blight/test_Tomato leaf late blight_3.jpg,30,30,0.7696875929832458
+test/Tomato_leaf_late_blight/test_Tomato leaf late blight_4.jpg,30,18,0.28243663907051086
+test/Tomato_leaf_late_blight/test_Tomato leaf late blight_5.jpg,30,18,0.6615617871284485
+test/Tomato_leaf_late_blight/test_Tomato leaf late blight_6.jpg,30,30,0.9665027856826782
+test/Tomato_leaf_late_blight/test_Tomato leaf late blight_7.jpg,30,30,0.959633469581604
+test/Tomato_leaf_late_blight/test_Tomato leaf late blight_8.jpg,30,30,0.941548764705658
+test/Tomato_leaf_late_blight/test_Tomato leaf late blight_9.jpg,30,20,0.5348162055015564
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_1.jpg,36,30,0.8360722661018372
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_10.jpg,36,30,0.47452056407928467
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_2.jpg,36,30,0.8582820296287537
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_3.jpg,36,30,0.8682698011398315
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_4.jpg,36,11,0.38759422302246094
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_5.jpg,36,8,0.9978918433189392
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_6.jpg,36,32,0.4779679477214813
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_7.jpg,36,30,0.7188587188720703
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_8.jpg,36,30,0.2421787828207016
+test/Tomato_leaf_mosaic_virus/test_Tomato leaf mosaic virus_9.jpg,36,30,0.5580039024353027
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_1.jpg,35,26,0.46731504797935486
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_2_1.jpg,35,25,0.5280222296714783
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_2_2.jpg,35,30,0.4468173682689667
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_2_3.jpg,35,35,0.6616734862327576
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_2_4.jpg,35,30,0.5622200965881348
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_2_5.jpg,35,35,0.9930204749107361
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_2_6.jpg,35,25,0.4229514002799988
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_3_1.jpg,35,30,0.9802727103233337
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_3_2.jpg,35,30,0.8001402616500854
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_4_1.jpg,35,30,0.8827496767044067
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_5.jpg,35,25,0.5378002524375916
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_6_1.jpg,35,30,0.6274698376655579
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_6_2.jpg,35,30,0.9532135128974915
+test/Tomato_leaf_yellow_virus/test_Tomato leaf yellow virus_6_3.jpg,35,30,0.8766265511512756
+test/Tomato_mold_leaf/test_Tomato mold leaf_1.jpg,31,30,0.40946659445762634
+test/Tomato_mold_leaf/test_Tomato mold leaf_2.jpg,31,32,0.3726936876773834
+test/Tomato_mold_leaf/test_Tomato mold leaf_3.jpg,31,30,0.9263557195663452
+test/Tomato_mold_leaf/test_Tomato mold leaf_4.jpg,31,30,0.6118668913841248
+test/Tomato_mold_leaf/test_Tomato mold leaf_5.jpg,31,7,0.6489111185073853
+test/Tomato_mold_leaf/test_Tomato mold leaf_6.jpg,31,30,0.5376954078674316
+test/grape_leaf/test_grape leaf_1.jpg,14,11,0.5038421154022217
+test/grape_leaf/test_grape leaf_10.jpg,14,30,0.7098435163497925
+test/grape_leaf/test_grape leaf_11.jpg,14,14,0.9579713344573975
+test/grape_leaf/test_grape leaf_12.jpg,14,14,0.9496126174926758
+test/grape_leaf/test_grape leaf_2.jpg,14,14,0.9933410286903381
+test/grape_leaf/test_grape leaf_3.jpg,14,11,0.42325690388679504
+test/grape_leaf/test_grape leaf_4.jpg,14,14,0.838055431842804
+test/grape_leaf/test_grape leaf_5.jpg,14,14,0.7100008130073547
+test/grape_leaf/test_grape leaf_6.jpg,14,23,0.8087229132652283
+test/grape_leaf/test_grape leaf_7.jpg,14,11,0.5334801077842712
+test/grape_leaf/test_grape leaf_9.jpg,14,11,0.2950482666492462
+test/grape_leaf_black_rot/test_grape leaf black rot_1.jpg,11,0,0.22790183126926422
+test/grape_leaf_black_rot/test_grape leaf black rot_2.jpg,11,12,0.6941995620727539
+test/grape_leaf_black_rot/test_grape leaf black rot_3.jpg,11,14,0.8634089827537537
+test/grape_leaf_black_rot/test_grape leaf black rot_5.jpg,11,12,0.9509384036064148
+test/grape_leaf_black_rot/test_grape leaf black rot_6.jpg,11,1,0.3488687574863434
+test/grape_leaf_black_rot/test_grape leaf black rot_7.jpg,11,8,0.471189945936203
+test/grape_leaf_black_rot/test_grape leaf black rot_8.jpg,11,11,0.4978071451187134
