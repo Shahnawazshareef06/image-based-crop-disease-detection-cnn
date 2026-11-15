@@ -1,0 +1,7 @@
+Class_A,Class_B,Misclassification_Count_ResNet50,Error_Rate_Percent_ResNet50,Misclassification_Count_MobileNetV3,Error_Rate_Percent_MobileNetV3,Error_Delta (MobileNet - ResNet)
+Tomato___Early_blight,Tomato___Target_Spot,8,2.22,18,4.99,10
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,7,3.12,14,6.25,7
+Tomato___Early_blight,Tomato___Late_blight,6,1.37,16,3.66,10
+Grape___Black_rot,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),5,1.47,11,3.24,6
+Apple___Apple_scab,Apple___Black_rot,3,1.59,9,4.76,6
+"Pepper,_bell___Bacterial_spot",Tomato___Bacterial_spot,2,0.43,7,1.49,5

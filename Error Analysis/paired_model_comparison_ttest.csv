@@ -1,0 +1,2 @@
+Comparison,Mean Difference in Macro-F1,Std of Difference,Paired t-statistic,p-value (two-tailed),Statistical Significance
+ResNet-50 vs. MobileNetV3,0.0161,0.0016,17.19,0.0034,Statistically Significant (p < 0.01)

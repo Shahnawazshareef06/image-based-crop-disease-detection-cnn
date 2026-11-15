@@ -1,0 +1,7 @@
+Rank,Class_Name,F1_Score,Precision,Recall,Support
+1,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.8851,0.9199,0.8571,77
+2,Corn_(maize)___Northern_Leaf_Blight,0.9432,0.929,0.9592,147
+3,Tomato___Early_blight,0.9467,0.9501,0.9444,150
+4,Tomato___Target_Spot,0.9502,0.9357,0.9652,211
+5,Tomato___Late_blight,0.9609,0.9879,0.9361,287
+6,Potato___healthy,0.9654,0.9733,0.9583,24
