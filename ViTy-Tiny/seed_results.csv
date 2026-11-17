@@ -1,0 +1,16 @@
+recipe_name,seed,best_epoch,best_validation_macro_f1
+no_augmentation,42,3,0.9521
+no_augmentation,123,3,0.9515
+no_augmentation,2026,3,0.9538
+joint_refined,42,3,0.9472
+joint_refined,123,3,0.9458
+joint_refined,2026,3,0.9504
+uniform_p010,42,3,0.9468
+uniform_p010,123,3,0.9441
+uniform_p010,2026,3,0.9482
+uniform_p020,42,3,0.9415
+uniform_p020,123,3,0.9388
+uniform_p020,2026,3,0.9419
+uniform_p025,42,3,0.9392
+uniform_p025,123,3,0.9356
+uniform_p025,2026,3,0.9404
