@@ -1,0 +1,159 @@
+path,true_class,mb_pred,res_pred,res_conf
+Potato___Late_blight/77164347-18bd-4466-aca9-0f61e6a36468___RS_LB 4155.JPG,Potato___Late_blight,Tomato___Late_blight,Potato___Late_blight,0.9869763
+Tomato___Late_blight/af0ded43-0d73-4d40-bd97-2597806aa707___GHLB_PS Leaf 37 Day 13.jpg,Tomato___Late_blight,Corn_(maize)___Common_rust_,Tomato___Late_blight,0.9928369
+Tomato___Spider_mites Two-spotted_spider_mite/497d72ff-a902-475e-930c-01762e10a400___Com.G_SpM_FL 8850.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,0.99964726
+Tomato___Early_blight/59dbd132-6e6c-4127-a218-b7602cbee670___RS_Erly.B 9449.JPG,Tomato___Early_blight,Tomato___Late_blight,Tomato___Early_blight,0.93535864
+Corn_(maize)___Common_rust_/RS_Rust 2122.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___healthy,Corn_(maize)___Common_rust_,0.9999993
+Cherry_(including_sour)___Powdery_mildew/8ea23363-e8ad-4e80-a02e-1eb9b80e9a76___FREC_Pwd.M 5155.JPG,Cherry_(including_sour)___Powdery_mildew,Tomato___Spider_mites Two-spotted_spider_mite,Cherry_(including_sour)___Powdery_mildew,0.9650996
+"Pepper,_bell___Bacterial_spot/3a03526d-0bf4-4898-9f0f-8a9c31afd3eb___JR_B.Spot 3380.JPG","Pepper,_bell___Bacterial_spot",Tomato___Early_blight,"Pepper,_bell___Bacterial_spot",0.996305
+Tomato___Late_blight/06412832-90d3-4713-9e82-f2cca52dadc8___GHLB2 Leaf 8734.JPG,Tomato___Late_blight,Tomato___Septoria_leaf_spot,Tomato___Late_blight,0.99262977
+Potato___Late_blight/b2492a9e-c038-48a7-8524-8f0aca7dc870___RS_LB 4291.JPG,Potato___Late_blight,Strawberry___Leaf_scorch,Potato___Late_blight,0.5459338
+Corn_(maize)___Common_rust_/RS_Rust 2553.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,1.0
+Soybean___healthy/d553e82d-4444-47a2-9849-3809d763459e___RS_HL 5973.JPG,Soybean___healthy,Potato___healthy,Soybean___healthy,0.8816399
+Corn_(maize)___Common_rust_/RS_Rust 2722.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9999932
+Corn_(maize)___Common_rust_/RS_Rust 2421.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9999993
+Tomato___Bacterial_spot/8a496fba-9b07-47a4-a9b0-8f14f6715cec___GCREC_Bact.Sp 5659.JPG,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato___Bacterial_spot,0.5081954
+Corn_(maize)___Common_rust_/RS_Rust 2509.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,1.0
+Tomato___Early_blight/a725f34d-c57c-4189-9ec8-6aeec7fb6a78___RS_Erly.B 6452.JPG,Tomato___Early_blight,Tomato___Leaf_Mold,Tomato___Early_blight,0.7716944
+Tomato___Late_blight/1f2dc4ae-5264-443a-a103-67fafb37bc70___GHLB_PS Leaf 26.1 Day 16.jpg,Tomato___Late_blight,Corn_(maize)___healthy,Tomato___Late_blight,0.9984238
+Tomato___Late_blight/670616fe-c1a6-41a9-99b2-eb6270d8c299___GHLB_PS Leaf 26.2 Day 16.jpg,Tomato___Late_blight,Squash___Powdery_mildew,Tomato___Late_blight,0.99733883
+Corn_(maize)___Common_rust_/RS_Rust 2410.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9987336
+Corn_(maize)___Common_rust_/RS_Rust 2576.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,1.0
+Tomato___Early_blight/6f8ac19d-d97f-47ee-8ad4-bb53ab7984a0___RS_Erly.B 7786.JPG,Tomato___Early_blight,Tomato___Septoria_leaf_spot,Tomato___Early_blight,0.7902461
+Corn_(maize)___Common_rust_/RS_Rust 2424.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.99999917
+Peach___Bacterial_spot/7b23b182-b353-457d-94db-c4ddd6fdcdd8___Rut._Bact.S 0975.JPG,Peach___Bacterial_spot,Peach___healthy,Peach___Bacterial_spot,0.86188734
+Tomato___Spider_mites Two-spotted_spider_mite/08f0fd0e-d4b1-400d-9df1-2d61d24c95f0___Com.G_SpM_FL 9397.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,0.8966767
+Corn_(maize)___Common_rust_/RS_Rust 1729.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9999999
+Corn_(maize)___Common_rust_/RS_Rust 2343.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9964141
+Corn_(maize)___Common_rust_/RS_Rust 1781.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.9999999
+Tomato___Early_blight/860f1131-a11c-4e17-aaec-c7b96ba914f0___RS_Erly.B 6669.JPG,Tomato___Early_blight,Tomato___Late_blight,Tomato___Early_blight,0.922289
+Corn_(maize)___Common_rust_/RS_Rust 2006.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.9999261
+Corn_(maize)___Common_rust_/RS_Rust 2092.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.9999999
+Corn_(maize)___Common_rust_/RS_Rust 1710.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,1.0
+Tomato___Tomato_Yellow_Leaf_Curl_Virus/afe58ed7-783e-4e28-b729-f55dac6be091___YLCV_NREC 2647.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.8618095
+Tomato___Late_blight/3943d2dd-ffb8-43db-a59d-db7af654aecf___GHLB_PS Leaf 51.1 Day 18.jpg,Tomato___Late_blight,Squash___Powdery_mildew,Tomato___Late_blight,0.99732
+Corn_(maize)___Common_rust_/RS_Rust 2243.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.9999931
+Corn_(maize)___Common_rust_/RS_Rust 1755.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.9999995
+Corn_(maize)___Common_rust_/RS_Rust 2039.JPG,Corn_(maize)___Common_rust_,Strawberry___Leaf_scorch,Corn_(maize)___Common_rust_,0.9999981
+Tomato___Late_blight/c933cfb7-d1c7-420b-88d0-7df28ae6ab2d___GHLB_PS Leaf 36.1 Day 13.jpg,Tomato___Late_blight,Corn_(maize)___healthy,Tomato___Late_blight,0.9829054
+Grape___Black_rot/0a06c482-c94a-44d8-a895-be6fe17b8c06___FAM_B.Rot 5019.JPG,Grape___Black_rot,Grape___Esca_(Black_Measles),Grape___Black_rot,0.7447125
+Corn_(maize)___Common_rust_/RS_Rust 2665.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.99999475
+Tomato___Early_blight/7763d482-8290-46f4-83aa-edb87ae15297___RS_Erly.B 7766.JPG,Tomato___Early_blight,Tomato___Target_Spot,Tomato___Early_blight,0.581467
+Corn_(maize)___Common_rust_/RS_Rust 1937.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9972299
+Corn_(maize)___Common_rust_/RS_Rust 2621.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9999995
+Corn_(maize)___Common_rust_/RS_Rust 1796.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,1.0
+Tomato___Early_blight/5595a78c-8a56-4ee2-b085-a96c6fb67846___RS_Erly.B 7716.JPG,Tomato___Early_blight,Tomato___Target_Spot,Tomato___Early_blight,0.847804
+Corn_(maize)___Common_rust_/RS_Rust 2647.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/ae535bc2-e24f-437e-ba3c-661fb05c0173___RS_GLSp 4461.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.66766864
+Corn_(maize)___Common_rust_/RS_Rust 2246.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,1.0
+Tomato___Bacterial_spot/55339b80-574d-4379-bc85-35558fcc0bea___UF.GRC_BS_Lab Leaf 0554.JPG,Tomato___Bacterial_spot,Tomato___Late_blight,Tomato___Bacterial_spot,0.947495
+Grape___Esca_(Black_Measles)/4d32a5c9-2b48-4fcf-ace1-ab0f81def6b7___FAM_B.Msls 4101.JPG,Grape___Esca_(Black_Measles),Grape___Black_rot,Grape___Esca_(Black_Measles),0.95236194
+Potato___Early_blight/a0d8a499-e9e4-4c88-829c-7c2270073735___RS_Early.B 8525.JPG,Potato___Early_blight,Potato___Late_blight,Potato___Early_blight,0.96524006
+Corn_(maize)___Common_rust_/RS_Rust 1846.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 1732.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.99996173
+Corn_(maize)___Common_rust_/RS_Rust 2118.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.9999982
+Corn_(maize)___Common_rust_/RS_Rust 2167.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.99964213
+Tomato___Early_blight/8405be22-ecbb-4cec-a87d-e0d454b9926d___RS_Erly.B 7847.JPG,Tomato___Early_blight,Tomato___Target_Spot,Tomato___Early_blight,0.82698226
+Corn_(maize)___Common_rust_/RS_Rust 2062.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Northern_Leaf_Blight/ecaf0f9a-338f-4065-bc84-7185d8394552___RS_NLB 3898.JPG,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,0.59795314
+Tomato___Spider_mites Two-spotted_spider_mite/9115f047-1373-48de-9c60-d62e71c99586___Com.G_SpM_FL 8896.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,0.98581123
+Tomato___Late_blight/afa8f963-b75c-4582-922b-c01f78d7d112___GHLB_PS Leaf 50 Day 18.jpg,Tomato___Late_blight,Squash___Powdery_mildew,Tomato___Late_blight,0.9525735
+Tomato___Tomato_Yellow_Leaf_Curl_Virus/cc181059-c0b6-49f7-a670-e237c8074e4f___UF.GRC_YLCV_Lab 08584.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.58888495
+Corn_(maize)___Common_rust_/RS_Rust 2569.JPG,Corn_(maize)___Common_rust_,Strawberry___Leaf_scorch,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 2452.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.99999905
+Tomato___Septoria_leaf_spot/13bc2fc9-24ab-44c5-bf5d-ea0d1a68798f___Matt.S_CG 0980.JPG,Tomato___Septoria_leaf_spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,0.95100534
+Tomato___Early_blight/93296d31-4bc2-4998-adce-ec243e940152___RS_Erly.B 7410.JPG,Tomato___Early_blight,Tomato___Septoria_leaf_spot,Tomato___Early_blight,0.9781602
+Corn_(maize)___Common_rust_/RS_Rust 2715.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 1721.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,1.0
+Tomato___Early_blight/65568918-2d9c-4f0c-aa9d-3f4fa8b9a60c___RS_Erly.B 7354.JPG,Tomato___Early_blight,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Early_blight,0.89852965
+Corn_(maize)___Common_rust_/RS_Rust 1654.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.99999785
+Corn_(maize)___Common_rust_/RS_Rust 2531.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.98999256
+Corn_(maize)___Common_rust_/RS_Rust 2720.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 2316.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.99999845
+Tomato___Spider_mites Two-spotted_spider_mite/cc736449-0d02-4b8b-b8c1-d6bbcd7b863f___Com.G_SpM_FL 8954.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,0.9980525
+Tomato___Early_blight/2bdca297-e0d1-41f0-b1dc-3801384faa1a___RS_Erly.B 7858.JPG,Tomato___Early_blight,Tomato___Target_Spot,Tomato___Early_blight,0.7674717
+Tomato___Spider_mites Two-spotted_spider_mite/c88db8ed-6493-4d6d-9474-f4538a227567___Com.G_SpM_FL 1577.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,0.89176685
+Tomato___Target_Spot/0f9aa748-57f0-4b14-98c0-b9c1966badc9___Com.G_TgS_FL 9854.JPG,Tomato___Target_Spot,Tomato___Bacterial_spot,Tomato___Target_Spot,0.8806165
+Corn_(maize)___Common_rust_/RS_Rust 2603.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9999995
+Tomato___Septoria_leaf_spot/ba5de483-365d-4a7c-8340-bf3ca0923a5e___Keller.St_CG 1861.JPG,Tomato___Septoria_leaf_spot,Tomato___Late_blight,Tomato___Septoria_leaf_spot,0.9650804
+Corn_(maize)___Common_rust_/RS_Rust 2456.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,1.0
+Tomato___Late_blight/1159051e-1278-4b35-929c-e26b963d048f___GHLB_PS Leaf 8.1 Day 16.jpg,Tomato___Late_blight,Squash___Powdery_mildew,Tomato___Late_blight,0.98646134
+Corn_(maize)___Common_rust_/RS_Rust 2668.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9999989
+Corn_(maize)___Common_rust_/RS_Rust 2579.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,1.0
+Tomato___Early_blight/8e1c8815-49e0-4be6-a3a5-a426ab6b2445___RS_Erly.B 7822.JPG,Tomato___Early_blight,Tomato___Target_Spot,Tomato___Early_blight,0.78206503
+Tomato___Late_blight/07897854-c2ab-465b-8cf7-a134b6066a1c___GHLB Leaf 1.1 Day 6.JPG,Tomato___Late_blight,Grape___Black_rot,Tomato___Late_blight,0.8855574
+Tomato___Leaf_Mold/4ff6a1de-00e2-401b-b6c2-e523289a9228___Crnl_L.Mold 6715.JPG,Tomato___Leaf_Mold,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Leaf_Mold,0.24712661
+"Pepper,_bell___Bacterial_spot/8b50f2db-cbf2-4758-bea6-a011f0cc1497___JR_B.Spot 3235.JPG","Pepper,_bell___Bacterial_spot",Orange___Haunglongbing_(Citrus_greening),"Pepper,_bell___Bacterial_spot",0.99911207
+Tomato___Tomato_Yellow_Leaf_Curl_Virus/5d996020-8061-4722-be87-182d16ba8503___UF.GRC_YLCV_Lab 08582.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.56490177
+Tomato___Septoria_leaf_spot/bc462a9d-4df2-4675-bce7-fb226d8f6d35___Matt.S_CG 1401.JPG,Tomato___Septoria_leaf_spot,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,0.9971433
+Tomato___Tomato_Yellow_Leaf_Curl_Virus/eec6cfb3-3856-4d30-a800-1dc0a1a11f13___UF.GRC_YLCV_Lab 08537.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,0.8135557
+Tomato___Bacterial_spot/2224e59e-d71f-4d3e-8d48-7dc90551aeb1___UF.GRC_BS_Lab Leaf 0251.JPG,Tomato___Bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Bacterial_spot,0.8872869
+Corn_(maize)___Common_rust_/RS_Rust 2482.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,1.0
+Cherry_(including_sour)___healthy/945405b7-e207-4cb2-a618-ac8a78c67c9f___JR_HL 9653.JPG,Cherry_(including_sour)___healthy,Soybean___healthy,Cherry_(including_sour)___healthy,0.40079537
+Corn_(maize)___Common_rust_/RS_Rust 1684.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.99999857
+Corn_(maize)___Common_rust_/RS_Rust 1947.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 2187.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9997023
+Tomato___Late_blight/5735bc4e-7a49-4a84-85f6-de312603c7f5___GHLB2 Leaf 8668.JPG,Tomato___Late_blight,Tomato___healthy,Tomato___Late_blight,0.9299639
+Grape___Black_rot/9107adf6-cf65-4071-822b-e68850cfcb52___FAM_B.Rot 0481.JPG,Grape___Black_rot,Grape___Esca_(Black_Measles),Grape___Black_rot,0.99271727
+"Pepper,_bell___healthy/d1d360b8-26e7-413c-9863-e16d5087464d___JR_HL 7997.JPG","Pepper,_bell___healthy","Pepper,_bell___Bacterial_spot","Pepper,_bell___healthy",0.9618546
+Corn_(maize)___Common_rust_/RS_Rust 2508.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9999832
+Tomato___Spider_mites Two-spotted_spider_mite/792c1530-f0d0-48c2-856d-6bb7003fbece___Com.G_SpM_FL 8475.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,0.89262635
+Tomato___Spider_mites Two-spotted_spider_mite/f822bd69-f201-488c-8f25-e3c4449ec308___Com.G_SpM_FL 8665.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,0.9424106
+Tomato___Early_blight/3b0f2e65-0005-4b3a-b63c-4ec99b3b92e5___RS_Erly.B 8227.JPG,Tomato___Early_blight,Tomato___Late_blight,Tomato___Early_blight,0.7255477
+Corn_(maize)___Common_rust_/RS_Rust 2723.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 2577.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.99996626
+Tomato___Leaf_Mold/0eda4dc5-7f7b-4e27-9e53-1e0326eef88e___Crnl_L.Mold 8850.JPG,Tomato___Leaf_Mold,Tomato___Septoria_leaf_spot,Tomato___Leaf_Mold,0.8763952
+Tomato___Leaf_Mold/a6308326-2fcb-4690-aec2-2e0b4f21efd6___Crnl_L.Mold 8817.JPG,Tomato___Leaf_Mold,Tomato___Septoria_leaf_spot,Tomato___Leaf_Mold,0.6077234
+Corn_(maize)___Common_rust_/RS_Rust 1600.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9999919
+Tomato___Spider_mites Two-spotted_spider_mite/ab7b1c1e-61d8-4a1c-a484-da6812513135___Com.G_SpM_FL 1463.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,0.8643442
+Corn_(maize)___Common_rust_/RS_Rust 1625.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.981989
+Corn_(maize)___Common_rust_/RS_Rust 1632.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 2629.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9999999
+Corn_(maize)___Common_rust_/RS_Rust 1965.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.99999964
+Corn_(maize)___Common_rust_/RS_Rust 2095.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9999993
+Corn_(maize)___Common_rust_/RS_Rust 2455.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9999994
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/ad47f4e8-308f-4c56-b50b-19e4f7fedd6d___RS_GLSp 4583.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,0.5455478
+Corn_(maize)___Common_rust_/RS_Rust 1800.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.99984133
+Tomato___Leaf_Mold/8c42c67d-817e-420b-8b70-92b4a32c46bc___Crnl_L.Mold 6501.JPG,Tomato___Leaf_Mold,Soybean___healthy,Tomato___Leaf_Mold,0.9743378
+Corn_(maize)___Common_rust_/RS_Rust 2342.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.99999976
+Corn_(maize)___Common_rust_/RS_Rust 2690.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9999894
+Corn_(maize)___Common_rust_/RS_Rust 2506.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9999188
+Tomato___Spider_mites Two-spotted_spider_mite/16d4c4ec-274a-4b5e-bfa3-6a40f90b46da___Com.G_SpM_FL 9465.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Late_blight,Tomato___Spider_mites Two-spotted_spider_mite,0.8288803
+Corn_(maize)___Common_rust_/RS_Rust 1986.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.99999714
+Corn_(maize)___Common_rust_/RS_Rust 2735.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 2609.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.99999964
+Corn_(maize)___Common_rust_/RS_Rust 2165.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 1709.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 2752.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9999999
+Corn_(maize)___Common_rust_/RS_Rust 2214.JPG,Corn_(maize)___Common_rust_,Strawberry___Leaf_scorch,Corn_(maize)___Common_rust_,1.0
+Tomato___Spider_mites Two-spotted_spider_mite/83066a1d-3c45-452b-af6e-55d6782c152d___Com.G_SpM_FL 9398.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,0.9124492
+Tomato___Early_blight/6c3feee9-23a8-46c4-8ded-5b0ef2e49ff5___RS_Erly.B 9370.JPG,Tomato___Early_blight,Tomato___Late_blight,Tomato___Early_blight,0.929429
+Corn_(maize)___Common_rust_/RS_Rust 1581.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 2699.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,1.0
+Tomato___Early_blight/468a0f48-b0c4-4969-9f21-826cb3ae3f61___RS_Erly.B 7725.JPG,Tomato___Early_blight,Tomato___Target_Spot,Tomato___Early_blight,0.7696421
+Corn_(maize)___Common_rust_/RS_Rust 1730.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,1.0
+Corn_(maize)___Common_rust_/RS_Rust 2013.JPG,Corn_(maize)___Common_rust_,Peach___Bacterial_spot,Corn_(maize)___Common_rust_,0.99991286
+Tomato___Early_blight/deed458f-ec5b-46c7-9658-c005cf90fc11___RS_Erly.B 7480.JPG,Tomato___Early_blight,Tomato___Late_blight,Tomato___Early_blight,0.75858736
+Tomato___Late_blight/b2f89c9a-820c-4a8b-a6dd-bb0adab42757___GHLB_PS Leaf 44.1 Day 18.jpg,Tomato___Late_blight,Squash___Powdery_mildew,Tomato___Late_blight,0.9906399
+Corn_(maize)___Common_rust_/RS_Rust 2169.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9999988
+Corn_(maize)___Common_rust_/RS_Rust 2708.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.9999999
+Corn_(maize)___Common_rust_/RS_Rust 1711.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___healthy,Corn_(maize)___Common_rust_,1.0
+Tomato___Late_blight/e7619088-871f-422e-a6e8-5c8a7da70b3e___GHLB2 Leaf 8825.JPG,Tomato___Late_blight,Tomato___Septoria_leaf_spot,Tomato___Late_blight,0.9825404
+Corn_(maize)___Common_rust_/RS_Rust 2481.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.99999976
+Tomato___Early_blight/f63f3650-9f84-45f9-898b-a6adef0294a3___RS_Erly.B 8419.JPG,Tomato___Early_blight,Tomato___Late_blight,Tomato___Early_blight,0.50527835
+Corn_(maize)___Common_rust_/RS_Rust 1728.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.9999988
+Corn_(maize)___Common_rust_/RS_Rust 1652.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,0.99352926
+Tomato___Late_blight/b2b78605-d686-49ad-b312-ff96c1d7acf1___RS_Late.B 6177.JPG,Tomato___Late_blight,Tomato___Leaf_Mold,Tomato___Late_blight,0.98738164
+Tomato___Leaf_Mold/acfa0062-84e4-4b59-a886-6ff31a81230f___Crnl_L.Mold 7007.JPG,Tomato___Leaf_Mold,Tomato___Late_blight,Tomato___Leaf_Mold,0.98463166
+"Pepper,_bell___healthy/62e9114f-1382-48c5-a829-ac7527e5f10f___JR_HL 7993.JPG","Pepper,_bell___healthy","Pepper,_bell___Bacterial_spot","Pepper,_bell___healthy",0.4883436
+Tomato___Spider_mites Two-spotted_spider_mite/5a4839d8-71de-41a8-9ca7-d3929c8e95ee___Com.G_SpM_FL 1358.JPG,Tomato___Spider_mites Two-spotted_spider_mite,Tomato___healthy,Tomato___Spider_mites Two-spotted_spider_mite,0.8560549
+Corn_(maize)___Common_rust_/RS_Rust 2555.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,0.9999999
+Corn_(maize)___Common_rust_/RS_Rust 2198.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Common_rust_,1.0
+Apple___Apple_scab/4a50158d-dcd0-4a1f-885e-2d9b16a4e344___FREC_Scab 3205.JPG,Apple___Apple_scab,Peach___Bacterial_spot,Apple___Apple_scab,0.8370457
+Tomato___Late_blight/33b5c25b-ab14-4b22-a7f0-764b2070b2d7___GHLB2 Leaf 8670.JPG,Tomato___Late_blight,Tomato___healthy,Tomato___Late_blight,0.9526169
+Tomato___Bacterial_spot/fe5de322-e644-44d7-9492-86cc6ed022b5___UF.GRC_BS_Lab Leaf 9072.JPG,Tomato___Bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Bacterial_spot,0.4020484
+Tomato___Target_Spot/2d918628-2486-4303-8e68-07fdefe3ae6b___Com.G_TgS_FL 9729.JPG,Tomato___Target_Spot,Tomato___Septoria_leaf_spot,Tomato___Target_Spot,0.58203036
+Tomato___Target_Spot/e8fae6c5-9d62-4f65-81a0-807e3082ea8d___Com.G_TgS_FL 0641.JPG,Tomato___Target_Spot,Tomato___Early_blight,Tomato___Target_Spot,0.5043169
+Tomato___Bacterial_spot/bc185bd9-5335-4fd5-b426-8c30b56feda3___UF.GRC_BS_Lab Leaf 8782.JPG,Tomato___Bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Bacterial_spot,0.5739981
+Corn_(maize)___Common_rust_/RS_Rust 2518.JPG,Corn_(maize)___Common_rust_,Squash___Powdery_mildew,Corn_(maize)___Common_rust_,0.99999976
+Tomato___Bacterial_spot/e898c21e-d118-4ab7-8c8a-c7e5810e2bc6___UF.GRC_BS_Lab Leaf 8693.JPG,Tomato___Bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Bacterial_spot,0.8978561
