@@ -1,7 +1,0 @@
-Rank,Class_A,Class_B,Misclassification_Count,Total_Pair_Support,Error_Rate_Percent
-1,Tomato___Early_blight,Tomato___Target_Spot,18,361,4.99
-2,Tomato___Early_blight,Tomato___Late_blight,16,437,3.66
-3,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,14,224,6.25
-4,Grape___Black_rot,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),11,340,3.24
-5,Apple___Apple_scab,Apple___Black_rot,9,189,4.76
-6,"Pepper,_bell___Bacterial_spot",Tomato___Bacterial_spot,7,470,1.49
