@@ -1,6 +1,0 @@
-Category,Count,Percentage
-Both Correct,7722,96.82%
-Only MobileNetV3 Wrong,158,1.98%
-Only ResNet-50 Wrong,48,0.60%
-Both Wrong (Shared Failures),48,0.60%
-Total Validation Images,7976,100.00%
