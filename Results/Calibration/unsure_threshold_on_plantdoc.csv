@@ -1,0 +1,5 @@
+model,target_accuracy,threshold,plantdoc_coverage,plantdoc_accuracy_on_kept
+resnet50,0.99,0.587,0.645,0.384
+resnet50,0.995,0.809,0.39,0.411
+mobilenetv3,0.99,0.644,0.452,0.281
+mobilenetv3,0.995,0.798,0.275,0.321

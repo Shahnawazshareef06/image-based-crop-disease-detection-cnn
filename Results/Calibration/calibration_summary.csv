@@ -1,0 +1,5 @@
+,T,T,accuracy,accuracy,ECE_before,ECE_before,ECE_after,ECE_after,NLL_before,NLL_before,NLL_after,NLL_after
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+model,,,,,,,,,,,,
+mobilenetv3,0.89703,0.03759,0.9827,0.00414,0.00658,0.00256,0.00395,0.00185,0.05729,0.01515,0.0564,0.0152
+resnet50,1.10575,0.18845,0.9883,0.00161,0.00486,0.00262,0.00441,0.00257,0.04934,0.02254,0.04695,0.01968
