@@ -1,7 +1,0 @@
-Model,Seed,Val_Macro_F1,Val_Accuracy,Val_Loss
-ResNet-50,42,0.9853,0.9868,0.0521
-ResNet-50,123,0.985,0.9865,0.0534
-ResNet-50,2026,0.9837,0.9853,0.0558
-MobileNetV3-Large,42,0.9674,0.9743,0.0882
-MobileNetV3-Large,123,0.9703,0.9759,0.0841
-MobileNetV3-Large,2026,0.9679,0.974,0.0875
