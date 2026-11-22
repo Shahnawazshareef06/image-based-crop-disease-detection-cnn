@@ -1,0 +1,59 @@
+{
+  "config_name": "04_uniform_p025",
+  "description": "Every augmentation family has application probability 0.25.",
+  "mode": "probabilistic",
+  "probabilities": {
+    "p_flip": 0.25,
+    "p_rotation": 0.25,
+    "p_colour": 0.25,
+    "p_blur": 0.25,
+    "p_noise": 0.25,
+    "p_cutout": 0.25,
+    "p_background": 0.25
+  },
+  "fixed_transform_strengths": {
+    "rotation_max_degrees": 15.0,
+    "brightness_range": [
+      0.6,
+      1.4
+    ],
+    "contrast_range": [
+      0.8,
+      1.2
+    ],
+    "saturation_range": [
+      0.8,
+      1.2
+    ],
+    "hue_strength": 0.02,
+    "gaussian_blur_kernel_size": 5,
+    "sensor_noise_std_rgb_0_to_1": 0.02,
+    "cutout_min_area_fraction": 0.02,
+    "cutout_max_area_fraction": 0.15,
+    "background_mask_size": 112,
+    "background_mask_algorithm": "grabcut-112px-3iter-v1"
+  },
+  "applied_to_training_only": true,
+  "validation_augmentation": "none; resize/cache + ImageNet normalization only",
+  "test_split_touched": false,
+  "run_signature": "42d73726b034",
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "epochs_per_run": 3,
+  "per_seed_validation_macro_f1": {
+    "42": 0.9813914039468544,
+    "123": 0.9803669008871864,
+    "2026": 0.9852405924598594
+  },
+  "validation_summary": {
+    "macro_f1_mean": 0.9823329657646335,
+    "macro_f1_sample_std": 0.0025696539414696426,
+    "accuracy_mean": 0.9872534269475093,
+    "accuracy_sample_std": 0.001398004737853414,
+    "weighted_f1_mean": 0.9870938676870752,
+    "weighted_f1_sample_std": 0.0015322513658256223
+  }
+}
