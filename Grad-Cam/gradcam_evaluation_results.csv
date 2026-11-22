@@ -1,0 +1,46 @@
+image_id,group,true_class,subpath,res_verdict,res_ratio,mb_verdict,mb_ratio
+1,Group 1: Correct,Tomato___healthy,0001460f-650a-41b5-ac4b-93e0076a5249___GH_HL Leaf 259.1.JPG,Lesion-Focused,0.785,Lesion-Focused,0.945
+2,Group 1: Correct,Tomato___healthy,00bce06e-9608-498 concrete...,Lesion-Focused,0.785,Lesion-Focused,0.945
+3,Group 1: Correct,Corn_(maize)___healthy,00031d81-ab1c-4b5d-9b16-56a84976451e___R.S_HL 7956.JPG,Lesion-Focused,1.0,Lesion-Focused,0.902
+4,Group 1: Correct,Apple___Apple_scab,00075aa8-d81a-4e84-a43d-51a6574f88b5___FREC_Scab 3335.JPG,Lesion-Focused,1.0,Lesion-Focused,0.994
+5,Group 1: Correct,Apple___Black_rot,00e909aa-e3ae-4558-9961-336bb7247ba3___JR_FrScab.S 8593.JPG,Lesion-Focused,0.97,Lesion-Focused,0.92
+6,Group 1: Correct,Potato___healthy,00fc8eac-fbef-4c7f-8948-80138c2ac710___RS_HL 1864.JPG,Lesion-Focused,1.0,Lesion-Focused,0.953
+7,Group 1: Correct,Potato___Late_blight,006955edd848.JPG,Lesion-Focused,0.758,Lesion-Focused,0.921
+8,Group 1: Correct,Grape___Black_rot,00e47087-0b16-43b6-9936-e8d122bf773a___FAM_B.Rot 3169.JPG,Lesion-Focused,0.774,Lesion-Focused,0.766
+9,Group 1: Correct,Grape___Esca_(Black_Measles),01162551-b800-4df8-ac46-64d17d6ac5bf___FAM_B.Msls 1153.JPG,Background-Focused,0.0,Lesion-Focused,0.778
+10,Group 1: Correct,Peach___Bacterial_spot,00f96894-3990-48e0-bb12-9276d1e44f1e___Rutg._Bact.S 1344.JPG,Background-Focused,0.001,Lesion-Focused,1.0
+11,Group 1: Correct,"Pepper,_bell___Bacterial_spot",00f2e69a-1e56-4165-b4d3-8d64226d9d8d___JR_B.Spot 3132.JPG,Lesion-Focused,1.0,Background-Focused,0.167
+12,Group 1: Correct,Soybean___healthy,00161616-e60e-4e01-8946-b883416ab485___RS_HL 4413.JPG,Background-Focused,0.125,Lesion-Focused,0.941
+13,Group 1: Correct,Strawberry___healthy,00e84b86-04ab-48d8-9c59-d88681533ad0___RS_HL 2095.JPG,Lesion-Focused,0.845,Background-Focused,0.752
+14,Group 1: Correct,Tomato___Bacterial_spot,00416648-be6e-4bd4-bc8d-82f43f8a7240___UF.GRC_BS_Lab Leaf 0498.JPG,Lesion-Focused,1.0,Lesion-Focused,1.0
+15,Group 1: Correct,Tomato___Target_Spot,00222384-93eb-46b5-b79e-e09265103a89___Com.G_TgS_FL 8153.JPG,Lesion-Focused,0.999,Lesion-Focused,0.995
+16,Group 2: Weakest Classes,Corn_(maize)___Common_rust_,002163b7-7d88-4e89-a212-073c683b5f36___RS_Rust 1665.JPG,Lesion-Focused,1.0,Mixed,0.531
+17,Group 2: Weakest Classes,Corn_(maize)___Common_rust_,00105312-3da4-42c1-93c4-2d07b82c6dd1___RS_Rust 1640.JPG,Lesion-Focused,1.0,Mixed,0.531
+18,Group 2: Weakest Classes,Corn_(maize)___Common_rust_,RS_Rust 1564.JPG,Background-Focused,0.013,Background-Focused,0.0
+19,Group 2: Weakest Classes,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,cfbb5e1c-2812-4467-9748-ee171462c331___RS_GLSp 4371.JPG,Lesion-Focused,1.0,Lesion-Focused,1.0
+20,Group 2: Weakest Classes,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,00120658-4560-4b68-b80c-03fb0cfcb3b5___RS_GLSp 4374.JPG,Lesion-Focused,1.0,Background-Focused,0.041
+21,Group 2: Weakest Classes,Corn_(maize)___Northern_Leaf_Blight,0073577d-8153-4dc9-982c-473d09a250fa___RS_NLB 3848.JPG,Lesion-Focused,0.952,Lesion-Focused,0.928
+22,Group 2: Weakest Classes,Corn_(maize)___Northern_Leaf_Blight,0003157b-83c3-43fe-a887-f834a3eb8752___RS_NLB 3632.JPG,Lesion-Focused,0.952,Lesion-Focused,0.928
+23,Group 2: Weakest Classes,Tomato___Early_blight,b58d7a66-097f-4167-abae-92f865407d90___RS_Erly.B 7845.JPG,Lesion-Focused,1.0,Lesion-Focused,0.985
+24,Group 2: Weakest Classes,Tomato___Early_blight,b24f8f98-4bfe-4605-85f5-738fc09e58fe___RS_Erly.B 6406.JPG,Background-Focused,0.002,Lesion-Focused,0.785
+25,Group 2: Weakest Classes,Tomato___Early_blight,f8374b63-016a-4b76-9ca8-df348cb44564___RS_Erly.B 7688.JPG,Lesion-Focused,0.882,Lesion-Focused,0.751
+26,Group 2: Weakest Classes,Tomato___Target_Spot,e475a5f4-8166-4b18-9f29-8a7ccb541bbb___Com.G_TgS_FL 9878.JPG,Lesion-Focused,0.907,Lesion-Focused,0.973
+27,Group 2: Weakest Classes,Tomato___Target_Spot,05991e8b-e178-450f-8da9-d7c10bd2cda9___Com.G_TgS_FL 9731.JPG,Background-Focused,0.681,Lesion-Focused,0.981
+28,Group 2: Weakest Classes,Tomato___Spider_mites Two-spotted_spider_mite,0a7714a4-530b-49e0-821f-be8d33c588ac___Com.G_SpM_FL 1775.JPG,Lesion-Focused,0.888,Lesion-Focused,0.88
+29,Group 2: Weakest Classes,Tomato___Spider_mites Two-spotted_spider_mite,0004be52-4752-43ce-b391-7f9754f76239___Com.G_SpM_FL 8945.JPG,Lesion-Focused,0.911,Background-Focused,0.317
+30,Group 2: Weakest Classes,Tomato___Bacterial_spot,8833a1e2-425e-4902-9883-2727ad858d23___UF.GRC_BS_Lab Leaf 9103.JPG,Background-Focused,0.008,Lesion-Focused,0.996
+31,Group 3: Field / Natural Context,Tomato___Late_blight,00ce4248-89c8-454e-add6-83441cf5e688___GHLB2 Leaf 9037.JPG,Background-Focused,0.179,Mixed,0.624
+32,Group 3: Field / Natural Context,Tomato___Late_blight,002f20ab-f052-4a0b-a010-863a3c267270___GHLB2 Leaf 90.1.JPG,Background-Focused,0.179,Mixed,0.624
+33,Group 3: Field / Natural Context,Tomato___Septoria_leaf_spot,000c79c8-724d-48fd-a0c3-f09c69d80d09___JR_Sept.L.S 8436.JPG,Lesion-Focused,1.0,Lesion-Focused,0.93
+34,Group 3: Field / Natural Context,Tomato___Septoria_leaf_spot,002e2124-b1ec-4e00-843a-23ff7a7d4cf4___JR_Sept.L.S 8597.JPG,Lesion-Focused,1.0,Lesion-Focused,0.93
+35,Group 3: Field / Natural Context,Tomato___Tomato_Yellow_Leaf_Curl_Virus,00a74797-2ff9-4efd-b94f-4a30e8c603fc___YLCV_GCREC 2552.JPG,Mixed,0.5,Lesion-Focused,0.888
+36,Group 3: Field / Natural Context,Tomato___Tomato_Yellow_Leaf_Curl_Virus,00f13d80-5a9f-4315-9430-c3d5e2365261___YLCV_GCREC 2786.JPG,Mixed,0.5,Lesion-Focused,0.888
+37,Group 3: Field / Natural Context,Tomato___Tomato_mosaic_virus,000ec694-0152-4751-8669-e587ad045a19___GH_HL Leaf 366.JPG,Mixed,0.693,Lesion-Focused,0.98
+38,Group 3: Field / Natural Context,Squash___Powdery_mildew,0034a755-e9d6-4443-85bb-264d1502fa62___UM_Powd.M 0517.JPG,Lesion-Focused,1.0,Background-Focused,0.952
+39,Group 3: Field / Natural Context,Squash___Powdery_mildew,00e8c187-ec12-4c60-84a2-19e49a1fbe7e___UM_Powd.M 0407.JPG,Lesion-Focused,1.0,Background-Focused,0.952
+40,Group 3: Field / Natural Context,Corn_(maize)___healthy,011f0a5d-b0a7-4c74-a690-3ae8e68db30d___R.S_HL 8094.JPG,Lesion-Focused,1.0,Lesion-Focused,0.902
+41,Group 3: Field / Natural Context,Apple___Cedar_apple_rust,005e8188-66a9-4673-9a3b-28564a2754fe___FREC_C.Rust 3747.JPG,Lesion-Focused,0.977,Background-Focused,0.967
+42,Group 3: Field / Natural Context,Apple___healthy,00f4ba19-e00e-4583-a5a8-3cb34177b966___RS_HL 7935.JPG,Mixed,0.5,Lesion-Focused,0.914
+43,Group 3: Field / Natural Context,Cherry_(including_sour)___Powdery_mildew,00c73229-2364-4e94-8149-d7b6eb4313f8___FREC_Pwd.M 4887.JPG,Background-Focused,0.328,Lesion-Focused,0.987
+44,Group 3: Field / Natural Context,Cherry_(including_sour)___healthy,00e5f037-f8cc-4d3f-b3a1-77884587a8b6___JR_HL 9766.JPG,Lesion-Focused,0.996,Lesion-Focused,0.992
+45,Group 3: Field / Natural Context,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),0007f3fc-4b36-4074-b5a5-c3c6f44e8c3f___FAM_L.Blight 1460.JPG,Background-Focused,0.0,Lesion-Focused,0.992
