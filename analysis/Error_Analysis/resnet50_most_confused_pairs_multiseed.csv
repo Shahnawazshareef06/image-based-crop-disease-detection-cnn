@@ -1,0 +1,75 @@
+True_Class,Predicted_Class,Clean_Label,Seed_42_Count,Seed_123_Count,Seed_2026_Count,Total_Count,Mean_Count
+Tomato___Late_blight,Corn_(maize)___Common_rust_,Tomato (Late blight) → Corn (maize) (Common rust ),1,21,18,40,13.333333333333334
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Northern_Leaf_Blight,Corn (maize): Cercospora leaf spot Gray leaf spot → Northern Leaf Blight,12,24,2,38,12.666666666666666
+Corn_(maize)___Northern_Leaf_Blight,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn (maize): Northern Leaf Blight → Cercospora leaf spot Gray leaf spot,8,4,21,33,11.0
+Tomato___Early_blight,Tomato___Late_blight,Tomato: Early blight → Late blight,8,5,2,15,5.0
+Tomato___Early_blight,Tomato___Target_Spot,Tomato: Early blight → Target Spot,4,3,4,11,3.6666666666666665
+Tomato___Target_Spot,Tomato___Septoria_leaf_spot,Tomato: Target Spot → Septoria leaf spot,5,3,2,10,3.3333333333333335
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Spider_mites Two-spotted_spider_mite,Tomato: Tomato Yellow Leaf Curl Virus → Spider mites Two-spotted spider mite,3,3,2,8,2.6666666666666665
+Tomato___Target_Spot,Tomato___Spider_mites Two-spotted_spider_mite,Tomato: Target Spot → Spider mites Two-spotted spider mite,3,2,2,7,2.3333333333333335
+Potato___Late_blight,Potato___Early_blight,Potato: Late blight → Early blight,1,1,4,6,2.0
+Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Target_Spot,Tomato: Spider mites Two-spotted spider mite → Target Spot,2,2,2,6,2.0
+Potato___Late_blight,Tomato___Late_blight,Potato (Late blight) → Tomato (Late blight),2,3,1,6,2.0
+Tomato___Septoria_leaf_spot,Potato___Early_blight,Tomato (Septoria leaf spot) → Potato (Early blight),2,2,1,5,1.6666666666666667
+Tomato___Bacterial_spot,Tomato___Early_blight,Tomato: Bacterial spot → Early blight,2,1,2,5,1.6666666666666667
+Tomato___Late_blight,Tomato___Early_blight,Tomato: Late blight → Early blight,0,1,4,5,1.6666666666666667
+Apple___healthy,Peach___healthy,Apple (healthy) → Peach (healthy),1,3,1,5,1.6666666666666667
+Tomato___Bacterial_spot,Tomato___Target_Spot,Tomato: Bacterial spot → Target Spot,2,0,2,4,1.3333333333333333
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Bacterial_spot,Tomato: Tomato Yellow Leaf Curl Virus → Bacterial spot,1,1,2,4,1.3333333333333333
+Tomato___Target_Spot,Tomato___Early_blight,Tomato: Target Spot → Early blight,1,1,2,4,1.3333333333333333
+Tomato___Target_Spot,Tomato___healthy,Tomato: Target Spot → healthy,3,1,0,4,1.3333333333333333
+Grape___Black_rot,Grape___Esca_(Black_Measles),Grape: Black rot → Esca (Black Measles),1,2,1,4,1.3333333333333333
+Tomato___Bacterial_spot,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato: Bacterial spot → Tomato Yellow Leaf Curl Virus,3,0,1,4,1.3333333333333333
+Tomato___Leaf_Mold,Tomato___Early_blight,Tomato: Leaf Mold → Early blight,1,1,1,3,1.0
+Tomato___Early_blight,Tomato___Septoria_leaf_spot,Tomato: Early blight → Septoria leaf spot,1,0,2,3,1.0
+Tomato___Early_blight,Tomato___Leaf_Mold,Tomato: Early blight → Leaf Mold,1,1,1,3,1.0
+Cherry_(including_sour)___Powdery_mildew,Apple___Apple_scab,Cherry (including sour) (Powdery mildew) → Apple (Apple scab),1,1,1,3,1.0
+Tomato___Leaf_Mold,Tomato___Target_Spot,Tomato: Leaf Mold → Target Spot,1,1,1,3,1.0
+Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot,Tomato: Bacterial spot → Septoria leaf spot,2,0,1,3,1.0
+Potato___healthy,Blueberry___healthy,Potato (healthy) → Blueberry (healthy),1,1,1,3,1.0
+Peach___Bacterial_spot,Peach___healthy,Peach: Bacterial spot → healthy,1,2,0,3,1.0
+Tomato___Target_Spot,Tomato___Late_blight,Tomato: Target Spot → Late blight,1,1,0,2,0.6666666666666666
+Tomato___Early_blight,Potato___Early_blight,Tomato (Early blight) → Potato (Early blight),0,2,0,2,0.6666666666666666
+Apple___Apple_scab,Apple___healthy,Apple: Apple scab → healthy,0,2,0,2,0.6666666666666666
+Cherry_(including_sour)___healthy,Potato___healthy,Cherry (including sour) (healthy) → Potato (healthy),0,1,1,2,0.6666666666666666
+Cherry_(including_sour)___healthy,Strawberry___Leaf_scorch,Cherry (including sour) (healthy) → Strawberry (Leaf scorch),0,1,1,2,0.6666666666666666
+Blueberry___healthy,Corn_(maize)___Common_rust_,Blueberry (healthy) → Corn (maize) (Common rust ),0,1,1,2,0.6666666666666666
+Tomato___Tomato_mosaic_virus,Tomato___Spider_mites Two-spotted_spider_mite,Tomato: Tomato mosaic virus → Spider mites Two-spotted spider mite,1,0,1,2,0.6666666666666666
+Tomato___Leaf_Mold,Tomato___Late_blight,Tomato: Leaf Mold → Late blight,0,1,1,2,0.6666666666666666
+Tomato___Spider_mites Two-spotted_spider_mite,Tomato___healthy,Tomato: Spider mites Two-spotted spider mite → healthy,2,0,0,2,0.6666666666666666
+Apple___Apple_scab,Apple___Black_rot,Apple: Apple scab → Black rot,1,1,0,2,0.6666666666666666
+Potato___Late_blight,Tomato___Target_Spot,Potato (Late blight) → Tomato (Target Spot),1,0,1,2,0.6666666666666666
+Tomato___Early_blight,Tomato___Bacterial_spot,Tomato: Early blight → Bacterial spot,1,1,0,2,0.6666666666666666
+Grape___Esca_(Black_Measles),Tomato___Late_blight,Grape (Esca (Black Measles)) → Tomato (Late blight),1,1,0,2,0.6666666666666666
+"Pepper,_bell___healthy",Potato___healthy,"Pepper, bell (healthy) → Potato (healthy)",1,0,1,2,0.6666666666666666
+Tomato___Bacterial_spot,Tomato___Late_blight,Tomato: Bacterial spot → Late blight,2,0,0,2,0.6666666666666666
+"Pepper,_bell___Bacterial_spot",Tomato___Septoria_leaf_spot,"Pepper, bell (Bacterial spot) → Tomato (Septoria leaf spot)",0,1,1,2,0.6666666666666666
+Tomato___Septoria_leaf_spot,Tomato___Early_blight,Tomato: Septoria leaf spot → Early blight,1,0,1,2,0.6666666666666666
+Potato___Late_blight,Soybean___healthy,Potato (Late blight) → Soybean (healthy),0,1,0,1,0.3333333333333333
+"Pepper,_bell___Bacterial_spot","Pepper,_bell___healthy","Pepper, bell: Bacterial spot → healthy",0,0,1,1,0.3333333333333333
+Potato___Late_blight,Potato___healthy,Potato: Late blight → healthy,0,0,1,1,0.3333333333333333
+Tomato___Tomato_mosaic_virus,Tomato___Target_Spot,Tomato: Tomato mosaic virus → Target Spot,0,1,0,1,0.3333333333333333
+Tomato___Leaf_Mold,Tomato___Bacterial_spot,Tomato: Leaf Mold → Bacterial spot,0,1,0,1,0.3333333333333333
+Tomato___Late_blight,Tomato___Septoria_leaf_spot,Tomato: Late blight → Septoria leaf spot,0,0,1,1,0.3333333333333333
+Apple___healthy,Apple___Apple_scab,Apple: healthy → Apple scab,0,0,1,1,0.3333333333333333
+Tomato___Leaf_Mold,Apple___Apple_scab,Tomato (Leaf Mold) → Apple (Apple scab),0,0,1,1,0.3333333333333333
+Tomato___Leaf_Mold,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato: Leaf Mold → Tomato Yellow Leaf Curl Virus,0,0,1,1,0.3333333333333333
+Tomato___Late_blight,Squash___Powdery_mildew,Tomato (Late blight) → Squash (Powdery mildew),0,1,0,1,0.3333333333333333
+Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Early_blight,Tomato: Spider mites Two-spotted spider mite → Early blight,0,0,1,1,0.3333333333333333
+Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Bacterial_spot,Tomato: Spider mites Two-spotted spider mite → Bacterial spot,0,1,0,1,0.3333333333333333
+Tomato___Spider_mites Two-spotted_spider_mite,Tomato___Late_blight,Tomato: Spider mites Two-spotted spider mite → Late blight,1,0,0,1,0.3333333333333333
+Peach___Bacterial_spot,Corn_(maize)___Common_rust_,Peach (Bacterial spot) → Corn (maize) (Common rust ),0,1,0,1,0.3333333333333333
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn_(maize)___Common_rust_,Corn (maize): Cercospora leaf spot Gray leaf spot → Common rust ,0,1,0,1,0.3333333333333333
+Cherry_(including_sour)___healthy,"Pepper,_bell___healthy","Cherry (including sour) (healthy) → Pepper, bell (healthy)",0,1,0,1,0.3333333333333333
+Apple___Black_rot,Apple___healthy,Apple: Black rot → healthy,0,1,0,1,0.3333333333333333
+Apple___Apple_scab,Apple___Cedar_apple_rust,Apple: Apple scab → Cedar apple rust,0,1,0,1,0.3333333333333333
+Apple___Apple_scab,Tomato___Late_blight,Apple (Apple scab) → Tomato (Late blight),1,0,0,1,0.3333333333333333
+Tomato___Septoria_leaf_spot,Tomato___Target_Spot,Tomato: Septoria leaf spot → Target Spot,1,0,0,1,0.3333333333333333
+Tomato___Septoria_leaf_spot,Tomato___Leaf_Mold,Tomato: Septoria leaf spot → Leaf Mold,1,0,0,1,0.3333333333333333
+Tomato___Leaf_Mold,Tomato___Septoria_leaf_spot,Tomato: Leaf Mold → Septoria leaf spot,1,0,0,1,0.3333333333333333
+Tomato___Bacterial_spot,Cherry_(including_sour)___Powdery_mildew,Tomato (Bacterial spot) → Cherry (including sour) (Powdery mildew),1,0,0,1,0.3333333333333333
+"Pepper,_bell___healthy",Cherry_(including_sour)___healthy,"Pepper, bell (healthy) → Cherry (including sour) (healthy)",1,0,0,1,0.3333333333333333
+Cherry_(including_sour)___healthy,Squash___Powdery_mildew,Cherry (including sour) (healthy) → Squash (Powdery mildew),1,0,0,1,0.3333333333333333
+Cherry_(including_sour)___healthy,Soybean___healthy,Cherry (including sour) (healthy) → Soybean (healthy),1,0,0,1,0.3333333333333333
+Blueberry___healthy,Tomato___Late_blight,Blueberry (healthy) → Tomato (Late blight),1,0,0,1,0.3333333333333333
+Tomato___Target_Spot,Tomato___Bacterial_spot,Tomato: Target Spot → Bacterial spot,0,0,1,1,0.3333333333333333
