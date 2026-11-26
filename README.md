@@ -35,11 +35,11 @@ python app/predict.py leaf.jpg --model mobilenetv3_large --heatmap overlay.png
 
 Substitute the path to your leaf photo. Use `--model resnet50` for the other checkpoint. The script prints the top class, decision, calibrated confidence, temperature and threshold as JSON.
 
-Both entry points use RGB, PIL bilinear resizing to 224 × 224 and ImageNet normalization from validation. Probabilities use softmax(logits / T) with the selected seed-42 temperature. A score below 0.80 displays **unsure**, following the [calibration handover](docs/Calibration/README.md). Grad-CAM highlights contributions to the top class from the last spatial features. The results page reads the published lab and field CSVs directly.
+Both entry points use RGB, PIL bilinear resizing to 224 × 224 and ImageNet normalization from validation. Probabilities use softmax(logits / T) with the selected seed-42 temperature. A score below 0.80 displays **unsure**, following the [calibration handover](docs/Calibration/README.md). Grad-CAM highlights contributions to the top class from the last spatial features. For unsure results, expand the model details to inspect the tentative class and heatmap. Accepted classes show guidance from `data/class_care.json`. The results page reads the published lab and field CSVs directly.
 
 ### Deploy on Streamlit Community Cloud
 
-Public app URL: pending deployment.
+[Open the deployed leaf classifier](https://image-based-crop-disease-detection-cnn.streamlit.app/)
 
 1. At [Streamlit Community Cloud](https://share.streamlit.io/), create an app from `dev-astitva/image-based-crop-disease-detection-cnn`, branch `streamlit-leaf-app`, entry point `app/streamlit_app.py`. Select Python 3.12 in Advanced settings and configure model access under Secrets. After merge, the upstream repository and merged branch can also be used.
 2. Deploy, open the public URL, upload a leaf and check both model choices. Add the verified public URL above. The CPU build keeps one selected model cached in memory and downloaded checkpoints on disk for the lifetime of the instance.
