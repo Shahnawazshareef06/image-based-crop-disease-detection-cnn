@@ -1,10 +1,11 @@
+import json
 import os
 from urllib.error import HTTPError
 
 import streamlit as st
-from PIL import Image
+from PIL import Image, ImageChops
 
-from predict import MODEL_NAMES, THRESHOLD, load_model, predict, prepare
+from predict import ROOT, MODEL_NAMES, THRESHOLD, load_model, predict, prepare
 
 st.set_page_config(page_title="TerraVista · Leaf analysis", page_icon="🌿")
 st.title("Leaf analysis")
@@ -48,15 +49,28 @@ if upload:
         st.stop()
     crop, condition = result["class"].split("___", 1)
     label = f"{crop} · {condition}".replace("_", " ").strip()
-    if result["decision"] == "unsure":
-        st.warning("Unsure")
-        st.write("Highest-scoring class", label)
+    unsure = result["decision"] == "unsure"
+    if unsure:
+        st.warning("Unsure — upload a clear close-up of one leaf against a plain background.")
     else:
         st.subheader(label)
     st.metric("Calibrated confidence", f"{result['confidence']:.2%}")
     st.caption(f"Unsure below {THRESHOLD:.0%} · Seed 42 · Temperature {result['temperature']:.4f}")
-    left, right = st.columns(2)
-    left.image(photo, caption="Model input", width="stretch")
-    right.image(overlay, caption="Grad-CAM for the highest-scoring class", width="stretch")
-    st.caption("Orange highlights regions that contributed most strongly to the class score. "
-               "Confidence was calibrated on lab images. Field photos can receive high scores even when the prediction is wrong.")
+
+    if not unsure:
+        care = json.loads((ROOT / "data/class_care.json").read_text(encoding="utf-8"))
+        st.subheader("Plant care" if condition == "healthy" else "What to do if confirmed")
+        st.write(care[result["class"]])
+
+    panel = st.expander("Inspect the model's top guess and Grad-CAM") if unsure else st.container()
+    with panel:
+        st.write("Highest-scoring class", label)
+        left, right = st.columns(2)
+        left.image(photo, caption="Model input", width="stretch")
+        if ImageChops.difference(photo, overlay).getbbox():
+            right.image(overlay, caption="Grad-CAM · " + label, width="stretch")
+            st.caption("Stronger orange indicates greater relative support for this class. "
+                       "The coarse map can highlight background as well as leaf tissue.")
+        else:
+            right.info("Grad-CAM found no visible spatial contrast for this class.")
+        st.caption("Confidence was calibrated on lab leaf photos. Other objects can also receive high scores.")
