@@ -31,21 +31,21 @@ Scores are mean macro-F1 across seeds **42, 123 and 2026**. The app uses the see
 
 | Stage | What the team completed | Explore |
 |---|---|---|
-| **Dataset preparation** | Reviewed duplicates, recorded removal decisions and fixed the PlantVillage split at 37,751 training, 7,976 validation and 7,978 test images. All 38 classes appear in each split. | [Duplicate review](data/Duplicates) · [Split manifest and class counts](data/split/README.md) |
+| **Dataset preparation** | Reviewed duplicates, recorded removal decisions and fixed the PlantVillage split at 37,751 training, 7,976 validation and 7,978 test images. All 38 classes appear in each split. | [Duplicate review](data/duplicates) · [Split manifest and class counts](data/split/README.md) |
 | **Augmentation and baselines** | Tested augmentation policies and probabilities, then compared five recipes across three seeds. With a frozen ResNet-50, the unaugmented baseline led at 0.9500 validation macro-F1. | [Augmentation study](experiments/augmentation-study/README.md) · [Frozen baseline](experiments/frozen_resnet50/README.md) |
-| **Class imbalance** | Compared focal loss against cross-entropy on frozen classifiers. On MobileNetV3-Large, focal loss gave no clear improvement for the five smallest classes. | [Loss experiments](experiments/focal_loss) · [MobileNetV3 comparison](experiments/focal_loss/MobilenetV3/comparison_table.csv) |
+| **Class imbalance** | Compared focal loss against cross-entropy on frozen classifiers. On MobileNetV3-Large, focal loss gave no clear improvement for the five smallest classes. | [Loss experiments](experiments/focal_loss) · [MobileNetV3 comparison](experiments/focal_loss/mobilenetv3/comparison_table.csv) |
 | **Final CNNs** | Measured ResNet-50 data efficiency using six training fractions from 1% to 100%. The final models used full fine-tuning and the uniform augmentation recipe `uniform_p010`. | [ResNet-50 runs](models/resnet50) · [MobileNetV3 training and evaluation](models/mobilenetv3_large) |
 | **Independent evaluation** | Evaluated six final checkpoints on held-out PlantVillage images, checked for near-duplicates and mapped PlantDoc labels for a field test. | [Lab predictions and metrics](experiments/test_evaluation) · [PlantDoc mapping](data/plantdoc/README.md) |
-| **Calibration** | Fit a temperature per checkpoint on half the validation set and evaluated it on the other half. The lab calibration study supplied the app’s 80% abstention rule. | [Method and reliability diagrams](docs/Calibration/README.md) · [Calibration outputs](Results/Calibration) |
-| **Error analysis and Grad-CAM** | Compared the models’ recurring confusions and shared mistakes across seeds. Inspected heatmaps for correct predictions, weak classes and field examples. | [Error tables](Analysis/Error_Analysis) · [Grad-CAM examples](Analysis/GradCAM_Analysis) |
+| **Calibration** | Fit a temperature per checkpoint on half the validation set and evaluated it on the other half. The lab calibration study supplied the app’s 80% abstention rule. | [Method and reliability diagrams](docs/calibration/README.md) · [Calibration outputs](results/calibration) |
+| **Error analysis and Grad-CAM** | Compared the models’ recurring confusions and shared mistakes across seeds. Inspected heatmaps for correct predictions, weak classes and field examples. | [Error tables](analysis/error_analysis) · [Grad-CAM examples](analysis/gradcam_analysis) |
 | **Deployment** | Connected the same CPU inference code to a command-line predictor and a two-page Streamlit app. Only the selected model is cached in memory. | [Predictor](app/predict.py) · [Streamlit app](app/streamlit_app.py) |
 
 <details>
 <summary><strong>See the team’s Grad-CAM comparison</strong></summary>
 
-![Summary of lesion and background focus in the Grad-CAM evaluation](Analysis/GradCAM_Analysis/gradcam_lesion_vs_background_summary.png)
+![Summary of lesion and background focus in the Grad-CAM evaluation](analysis/gradcam_analysis/gradcam_lesion_vs_background_summary.png)
 
-[Inspect the image-level predictions and heatmap measurements](Analysis/GradCAM_Analysis/gradcam_evaluation_results.csv)
+[Inspect the image-level predictions and heatmap measurements](analysis/gradcam_analysis/gradcam_evaluation_results.csv)
 
 </details>
 

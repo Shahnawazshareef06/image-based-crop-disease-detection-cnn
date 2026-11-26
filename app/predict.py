@@ -115,7 +115,7 @@ def load_model(name):
             weights = weights[key]
             break
     model.load_state_dict({k.removeprefix("module."): v for k, v in weights.items()})
-    temperatures = json.loads((ROOT / "Results/Calibration/temperature_values.json").read_text())
+    temperatures = json.loads((ROOT / "results/calibration/temperature_values.json").read_text())
     key = name.removesuffix("_large") + "_seed42"
     return model.eval().requires_grad_(False), labels, temperatures[key]
 
