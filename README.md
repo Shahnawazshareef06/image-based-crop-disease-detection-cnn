@@ -4,7 +4,7 @@
 
 Upload a leaf photo to compare two convolutional networks across 38 crop and condition classes. TerraVista shows the predicted class, calibrated confidence and a Grad-CAM overlay. The project also asks a harder question: how much of the accuracy measured on lab leaves carries over to field photos?
 
-**[Open the live app](https://image-based-crop-disease-detection-cnn.streamlit.app/)** · [Project tour](#project-tour) · [Results](#what-the-models-learned) · [Run locally](#run-locally)
+**[Open the live app](https://image-based-crop-disease-detection-cnn.streamlit.app/)** · [Project tour](#project-tour) · [Results](#what-the-models-learned) · [Run locally](#run-locally) · [Extension service brief](docs/deployment_brief.md)
 
 ## Inside the app
 
