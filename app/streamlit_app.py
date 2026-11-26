@@ -1,3 +1,6 @@
+import os
+from urllib.error import HTTPError
+
 import streamlit as st
 from PIL import Image
 
@@ -24,6 +27,21 @@ if upload:
     try:
         with st.spinner(f"Preparing {MODEL_NAMES[name]} and analysing the leaf…"):
             result, overlay = predict(selected_model(name), photo)
+    except HTTPError as exc:
+        override = os.getenv(name.upper() + "_URL")
+        source = "Checkpoint URL" if override else "Kaggle"
+        st.error(f"{source} returned HTTP {exc.code} while fetching the model.")
+        if not override:
+            has_credentials = bool(os.getenv("KAGGLE_API_TOKEN") or
+                                   (os.getenv("KAGGLE_USERNAME") and os.getenv("KAGGLE_KEY")))
+            if not has_credentials:
+                st.caption("Add your Kaggle credentials as top-level keys in Streamlit Secrets.")
+            elif exc.code == 401:
+                st.caption("Kaggle credentials were configured. Check that the token is valid and active.")
+            elif exc.code in (403, 404):
+                st.caption("Kaggle credentials were configured. Try downloading version 1 of "
+                           "shahnawaz006/terravista-ckpts using the same Kaggle account.")
+        st.stop()
     except (OSError, ValueError, RuntimeError) as exc:
         st.error("Could not load the verified checkpoint. Check the Kaggle access or local cache described in the README.")
         st.caption(f"Error type: {type(exc).__name__}")
