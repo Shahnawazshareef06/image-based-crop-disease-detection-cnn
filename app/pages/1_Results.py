@@ -1,4 +1,5 @@
 import csv
+from html import escape
 from pathlib import Path
 
 import streamlit as st
@@ -10,6 +11,17 @@ NAMES = {"mobilenetv3_large": "MobileNetV3-Large", "resnet50": "ResNet-50"}
 def read_rows(path):
     with (ROOT / path).open(encoding="utf-8", newline="") as file:
         return list(csv.DictReader(file))
+
+
+def comparison_table(rows, label):
+    headers = list(rows[0])
+    headings = "".join(f'<th scope="col">{escape(key)}</th>' for key in headers)
+    body = []
+    for row in rows:
+        cells = "".join(f'<td data-label="{escape(key)}">{escape(str(row[key]))}</td>' for key in headers)
+        body.append(f"<tr>{cells}</tr>")
+    st.html(f'<table class="tv-table" aria-label="{escape(label)}"><thead><tr>{headings}</tr></thead>'
+            f'<tbody>{"".join(body)}</tbody></table>')
 
 
 st.markdown('<div class="tv-brand">TerraVista</div>', unsafe_allow_html=True)
@@ -27,7 +39,7 @@ with lab:
               "Macro-F1": f"{float(r['test_macro_f1_mean']):.4f}",
               "95% interval for macro-F1": f"{float(r['ci95_low_seed_mean']):.4f} – {float(r['ci95_high_seed_mean']):.4f}"}
              for r in rows]
-    st.dataframe(table, hide_index=True, width="stretch")
+    comparison_table(table, "PlantVillage lab performance")
 with field:
     rows = read_rows("experiments/plantdoc-field-test/duplicate_screened_metrics.csv")
     st.subheader("The same 27 classes in two settings")
@@ -42,7 +54,7 @@ with field:
                 st.progress(value, text=f"{dataset} · {value:.4f} · {int(row['images']):,} images")
     st.write("Both models scored lower on field photos. Use field performance when interpreting a grower's upload.")
     with st.expander("View comparison table"):
-        st.dataframe([{"Model": NAMES[r["model"]], "Dataset": r["domain"].split("_")[0],
+        comparison_table([{"Model": NAMES[r["model"]], "Dataset": "PlantDoc field" if r["domain"] == "plantdoc_test" else "PlantVillage lab",
                        "Images": int(r["images"]), "Macro-F1": float(r["macro_f1_mean"])} for r in rows],
-                     hide_index=True, width="stretch")
+                     "Screened lab and field scores")
 st.caption("Macro-F1 gives every class equal weight. The analysis page uses the seed-42 checkpoint for your selected model.")
