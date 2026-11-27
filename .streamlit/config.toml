@@ -1,5 +1,11 @@
 [theme]
-primaryColor = "#276A4C"
+base = "dark"
+primaryColor = "#91D8AD"
+backgroundColor = "#101916"
+secondaryBackgroundColor = "#1B2B25"
+textColor = "#EBF3ED"
+borderColor = "#385147"
+baseRadius = "0.8rem"
 font = "sans serif"
 
 [server]
