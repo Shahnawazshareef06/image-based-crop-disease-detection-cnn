@@ -50,8 +50,11 @@ with reference:
 
 source = upload if upload is not None else EXAMPLE if st.session_state.get("use_example") else None
 if source is not None:
+    analysis_key = (name, upload.file_id if upload is not None else "sample-cherry")
+    previous = st.session_state.get("last_analysis")
+    cached = isinstance(previous, dict) and previous.get("key") == analysis_key
     try:
-        photo = prepare(source)
+        photo = previous["photo"] if cached else prepare(source)
     except (OSError, ValueError, Image.DecompressionBombError):
         st.error("Choose a readable JPEG, PNG or WebP photo with at most 24 megapixels.")
         st.stop()
@@ -59,15 +62,13 @@ if source is not None:
         with reference:
             with st.container(border=True):
                 st.image(photo, caption="Your photo · model input", width=224)
-    analysis_key = (name, upload.file_id if upload is not None else "sample-cherry")
-    previous = st.session_state.get("last_analysis")
     try:
-        if previous is None or previous[0] != analysis_key:
+        if not cached:
             with st.spinner(f"Analysing with {MODEL_NAMES[name]}… The first run may take longer while the model downloads."):
                 result, overlay = predict(selected_model(name), photo)
-            st.session_state.last_analysis = (analysis_key, result, overlay)
+            st.session_state.last_analysis = {"key": analysis_key, "photo": photo, "result": result, "overlay": overlay}
         else:
-            _, result, overlay = previous
+            result, overlay = previous["result"], previous["overlay"]
     except HTTPError as exc:
         override = os.getenv(name.upper() + "_URL")
         source = "Checkpoint URL" if override else "Kaggle"
@@ -82,15 +83,19 @@ if source is not None:
             elif exc.code in (403, 404):
                 st.caption("Kaggle credentials were configured. Try downloading version 1 of "
                            "shahnawaz006/terravista-ckpts using the same Kaggle account.")
+        if exc.code in (408, 425, 429) or 500 <= exc.code < 600:
+            st.button("Retry analysis", icon=":material/refresh:")
         st.stop()
     except (OSError, ValueError, RuntimeError) as exc:
         st.error("Could not load the verified checkpoint. Check the Kaggle access or local cache described in the README.")
         st.caption(f"Error type: {type(exc).__name__}")
+        st.button("Retry analysis", icon=":material/refresh:")
         st.stop()
     crop, condition = result["class"].split("___", 1)
     label = f"{crop} · {condition}".replace("_", " ").strip()
     unsure = result["decision"] == "unsure"
     st.subheader("Analysis result")
+    st.caption(MODEL_NAMES[name] + (" · Uploaded photo" if upload is not None else " · Cherry leaf sample"))
     with st.container(border=True):
         decision, score = st.columns([1.4, 1])
         with decision:
@@ -111,12 +116,19 @@ if source is not None:
 
     with st.expander("Model evidence and heatmap", expanded=not unsure):
         st.write("Highest-scoring class", label)
-        left, right = st.columns(2)
-        left.image(photo, caption="Model input · 224 × 224", width="stretch")
         if ImageChops.difference(photo, overlay).getbbox():
-            right.image(overlay, caption="Grad-CAM · orange shows stronger support", width="stretch")
+            view = st.radio("Image comparison", ["Side by side", "Adjust overlay"], horizontal=True)
+            if view == "Side by side":
+                left, right = st.columns(2)
+                left.image(photo, caption="Original model input", width="stretch")
+                right.image(overlay, caption="Grad-CAM · orange shows stronger support", width="stretch")
+            else:
+                strength = st.slider("Heatmap visibility", 0, 100, 100, step=5, format="%d%%")
+                st.image(Image.blend(photo, overlay, strength / 100), width=420,
+                         caption="0% shows the original leaf. 100% shows the full Grad-CAM overlay.")
         else:
-            right.info("Grad-CAM found no visible spatial contrast for this class.")
+            st.image(photo, caption="Original model input", width=224)
+            st.info("Grad-CAM found no visible spatial contrast for this class.")
         st.caption(f"{MODEL_NAMES[name]} · Seed 42 · Temperature {result['temperature']:.4f}")
         st.write("The heatmap can highlight background as well as leaf tissue. Confidence was calibrated on lab photos. Field images and unrelated objects can receive high scores.")
 
